@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juntos por Nieve 🐾 | Recaudación y Apoyo</title>
-  <meta name="description" content="Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 9 años llena de vida y amor.">
+  <title id="page-title">Juntos por Nieve 🐾 | Recaudación y Apoyo</title>
+  <meta name="description" id="page-desc" content="Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 9 años llena de vida y amor.">
   
   <!-- Favicon / Emojis -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
@@ -32,14 +32,21 @@
     <div class="container header-container">
       <a href="#" class="logo">
         <span class="logo-icon">🐾</span>
-        <span class="logo-text">Juntos por <strong>Nieve</strong></span>
+        <span class="logo-text" data-i18n="nav_brand">Juntos por <strong>Nieve</strong></span>
       </a>
       <nav class="nav-links">
-        <a href="#historia">Su Historia</a>
-        <a href="#salud">Estado de Salud</a>
-        <a href="#galeria">Fotos</a>
-        <a href="#como-ayudar" class="btn-nav-donate">❤️ Cómo Ayudar</a>
+        <a href="#historia" data-i18n="nav_story">Su Historia</a>
+        <a href="#salud" data-i18n="nav_health">Estado de Salud</a>
+        <a href="#galeria" data-i18n="nav_photos">Fotos</a>
       </nav>
+      <div class="header-actions">
+        <!-- Language Switcher Pill -->
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" id="btn-lang-es" onclick="setLanguage('es')">ES</button>
+          <button type="button" class="lang-btn" id="btn-lang-en" onclick="setLanguage('en')">EN</button>
+        </div>
+        <a href="#como-ayudar" class="btn-nav-donate" data-i18n="nav_help_btn">❤️ Cómo Ayudar</a>
+      </div>
     </div>
   </header>
 
@@ -47,11 +54,11 @@
   <section class="hero-section">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="badge-tag">
+        <div class="badge-tag" data-i18n="hero_badge">
           <i class="fa-solid fa-heart-pulse"></i> Campaña Médica de Apoyo
         </div>
-        <h1 class="hero-title">Ayúdanos a salvar a <span class="gradient-text">Nieve</span></h1>
-        <p class="hero-subtitle">
+        <h1 class="hero-title" data-i18n="hero_title">Ayúdanos a salvar a <span class="gradient-text">Nieve</span></h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
           Una dulce perrita maltesa de <strong>9 años</strong>, sumamente juguetona, cariñosa y llena de ganas de seguir viviendo momentos felices a nuestro lado.
         </p>
 
@@ -59,23 +66,23 @@
         <div class="pet-quick-info">
           <div class="info-pill">
             <i class="fa-solid fa-dog"></i>
-            <span>Perrita Maltés</span>
+            <span data-i18n="hero_pill_breed">Perrita Maltés</span>
           </div>
           <div class="info-pill">
             <i class="fa-solid fa-cake-candles"></i>
-            <span>9 Años</span>
+            <span data-i18n="hero_pill_age">9 Años</span>
           </div>
           <div class="info-pill">
             <i class="fa-solid fa-sparkles"></i>
-            <span>Juguetona y Cariñosa</span>
+            <span data-i18n="hero_pill_personality">Juguetona y Cariñosa</span>
           </div>
         </div>
 
         <div class="hero-actions">
-          <a href="#como-ayudar" class="btn btn-primary">
+          <a href="#como-ayudar" class="btn btn-primary" data-i18n="hero_btn_donate">
             <i class="fa-solid fa-hand-holding-heart"></i> Donar o Apoyar
           </a>
-          <button class="btn btn-secondary" id="btn-share-hero">
+          <button class="btn btn-secondary" id="btn-share-hero" data-i18n="hero_btn_share">
             <i class="fa-solid fa-share-nodes"></i> Compartir
           </button>
         </div>
@@ -89,11 +96,11 @@
             <div class="image-overlay-gradient"></div>
             <div class="floating-badge">
               <span class="pulse-dot"></span>
-              <span>Luchando con amor</span>
+              <span data-i18n="hero_badge_floating">Luchando con amor</span>
             </div>
           </div>
           <div class="hero-card-footer">
-            <div class="quote-text">
+            <div class="quote-text" data-i18n="hero_quote">
               <i class="fa-solid fa-quote-left"></i> "Cada pequeña ayuda o difusión cuenta el doble para su tratamiento."
             </div>
           </div>
@@ -108,28 +115,28 @@
     <section id="historia" class="section-padding">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Conoce a nuestra pequeña</span>
-          <h2 class="section-title">El corazón de nuestra familia</h2>
+          <span class="section-subtitle" data-i18n="story_subtitle">Conoce a nuestra pequeña</span>
+          <h2 class="section-title" data-i18n="story_title">El corazón de nuestra familia</h2>
           <div class="title-underline"></div>
         </div>
 
         <div class="cards-grid">
           <div class="info-card">
             <div class="card-icon"><i class="fa-solid fa-bone"></i></div>
-            <h3>Espíritu Juguetón</h3>
-            <p>A pesar de sus 9 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.</p>
+            <h3 data-i18n="story_card1_title">Espíritu Juguetón</h3>
+            <p data-i18n="story_card1_text">A pesar de sus 9 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.</p>
           </div>
 
           <div class="info-card">
             <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
-            <h3>Amor Incondicional</h3>
-            <p>Es una perrita sumamente noble y cariñosa. Siempre busca dar compañía, acurrucarse y regalar miradas llenas de gratitud y ternura.</p>
+            <h3 data-i18n="story_card2_title">Amor Incondicional</h3>
+            <p data-i18n="story_card2_text">Es una perrita sumamente noble y cariñosa. Siempre busca dar compañía, acurrucarse y regalar miradas llenas de gratitud y ternura.</p>
           </div>
 
           <div class="info-card">
             <div class="card-icon"><i class="fa-solid fa-shield-cat"></i></div>
-            <h3>Una Gran Luchadora</h3>
-            <p>Hoy se enfrenta a un desafío de salud, pero con el tratamiento médico adecuado y nuestro apoyo colectivo, sabemos que saldrá adelante.</p>
+            <h3 data-i18n="story_card3_title">Una Gran Luchadora</h3>
+            <p data-i18n="story_card3_text">Hoy se enfrenta a un desafío de salud, pero con el tratamiento médico adecuado y nuestro apoyo colectivo, sabemos que saldrá adelante.</p>
           </div>
         </div>
       </div>
@@ -140,14 +147,14 @@
       <div class="container">
         <div class="medical-grid">
           <div class="medical-text">
-            <div class="badge-warning">
+            <div class="badge-warning" data-i18n="medical_badge">
               <i class="fa-solid fa-circle-exclamation"></i> Situación Médica
             </div>
-            <h2>El diagnóstico de Nieve</h2>
-            <p class="lead-text">
+            <h2 data-i18n="medical_title">El diagnóstico de Nieve</h2>
+            <p class="lead-text" data-i18n="medical_lead">
               Recientemente se le detectó un <strong>tumor</strong>. Ya se le realizaron los <strong>estudios clínicos y biopsias</strong> para su diagnóstico, y ahora el paso más importante es su <strong>cirugía y tratamiento post-operatorio</strong>.
             </p>
-            <p>
+            <p data-i18n="medical_desc">
               El objetivo actual de esta campaña es solventar los gastos veterinarios de su operación y recuperación:
             </p>
             
@@ -156,54 +163,54 @@
                 <div class="check-icon icon-completed"><i class="fa-solid fa-circle-check"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong>Estudios, Biopsias y Análisis Clínicos</strong>
-                    <span class="badge-done"><i class="fa-solid fa-check"></i> Realizado</span>
+                    <strong data-i18n="medical_step1_title">Estudios, Biopsias y Análisis Clínicos</strong>
+                    <span class="badge-done" data-i18n="medical_step1_badge"><i class="fa-solid fa-check"></i> Realizado</span>
                   </div>
-                  <span>Diagnóstico veterinario completado para planificar la intervención médica.</span>
+                  <span data-i18n="medical_step1_desc">Diagnóstico veterinario completado para planificar la intervención médica.</span>
                 </div>
               </li>
               <li class="item-urgent">
                 <div class="check-icon icon-urgent"><i class="fa-solid fa-hospital"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong>Procedimiento Quirúrgico / Cirugía</strong>
-                    <span class="badge-active"><i class="fa-solid fa-heart-pulse"></i> Próximo Paso</span>
+                    <strong data-i18n="medical_step2_title">Procedimiento Quirúrgico / Cirugía</strong>
+                    <span class="badge-active" data-i18n="medical_step2_badge"><i class="fa-solid fa-heart-pulse"></i> Próximo Paso</span>
                   </div>
-                  <span>Extracción del tumor, quirófano, monitoreo y anestesia especializada.</span>
+                  <span data-i18n="medical_step2_desc">Extracción del tumor, quirófano, monitoreo y anestesia especializada.</span>
                 </div>
               </li>
               <li>
                 <div class="check-icon"><i class="fa-solid fa-pills"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong>Medicamentos y Cuidados Post-operatorios</strong>
+                    <strong data-i18n="medical_step3_title">Medicamentos y Cuidados Post-operatorios</strong>
                   </div>
-                  <span>Antibióticos, analgésicos, curaciones y consultas de seguimiento veterinario.</span>
+                  <span data-i18n="medical_step3_desc">Antibióticos, analgésicos, curaciones y consultas de seguimiento veterinario.</span>
                 </div>
               </li>
             </ul>
           </div>
 
-          <!-- Medical Support Card (Sin meta fija) -->
+          <!-- Medical Support Card -->
           <div class="medical-card">
             <div class="fundraiser-card">
               <div class="fundraiser-header">
-                <h3>Apoyo Médico Directo</h3>
-                <span class="status-pill active">Campaña Activa</span>
+                <h3 data-i18n="medical_card_title">Apoyo Médico Directo</h3>
+                <span class="status-pill active" data-i18n="medical_card_badge">Campaña Activa</span>
               </div>
 
               <div class="medical-action-info">
-                <p>
+                <p data-i18n="medical_card_desc">
                   Cada aportación se destina <strong>100%</strong> a los gastos de veterinaria, estudios clínicos y medicación de Nieve.
                 </p>
               </div>
 
               <div class="transparency-note">
                 <i class="fa-solid fa-file-invoice-dollar"></i>
-                <p>Estaremos compartiendo todas las recetas, notas médicas y comprobantes veterinarios con quienes nos apoyen.</p>
+                <p data-i18n="medical_card_transparency">Estaremos compartiendo todas las recetas, notas médicas y comprobantes veterinarios con quienes nos apoyen.</p>
               </div>
 
-              <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar%20con%20una%20donación" target="_blank" class="btn btn-whatsapp-main btn-block">
+              <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar%20con%20una%20donación" target="_blank" class="btn btn-whatsapp-main btn-block" id="btn-wa-card" data-i18n="medical_card_btn">
                 <i class="fa-brands fa-whatsapp"></i> Contactar para Apoyar
               </a>
             </div>
@@ -216,9 +223,9 @@
     <section id="como-ayudar" class="section-padding">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Tu apoyo hace la diferencia</span>
-          <h2 class="section-title">¿Cómo puedes apoyar a Nieve?</h2>
-          <p class="section-desc">Cualquier aportación o simplemente compartir este enlace nos acerca más a su recuperación.</p>
+          <span class="section-subtitle" data-i18n="help_subtitle">Tu apoyo hace la diferencia</span>
+          <h2 class="section-title" data-i18n="help_title">¿Cómo puedes apoyar a Nieve?</h2>
+          <p class="section-desc" data-i18n="help_desc">Cualquier aportación o simplemente compartir este enlace nos acerca más a su recuperación.</p>
           <div class="title-underline"></div>
         </div>
 
@@ -229,30 +236,30 @@
             <div class="donation-header">
               <div class="donation-icon whatsapp-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
               <div>
-                <h3>Donación Directa por WhatsApp</h3>
-                <p>Coordinación personalizada y transparente</p>
+                <h3 data-i18n="help_wa_title">Donación Directa por WhatsApp</h3>
+                <p data-i18n="help_wa_subtitle">Coordinación personalizada y transparente</p>
               </div>
             </div>
             
-            <p class="donation-text">
+            <p class="donation-text" data-i18n="help_wa_text">
               Escríbenos directamente para brindarte los datos correspondientes, resolver cualquier duda sobre la salud de Nieve o enviarte sus notas médicas:
             </p>
 
             <div class="phone-number-box">
               <div class="phone-info">
-                <span class="phone-label">WhatsApp de contacto:</span>
+                <span class="phone-label" data-i18n="help_wa_label">WhatsApp de contacto:</span>
                 <strong class="phone-display" id="phone-val">+52 999 381 4530</strong>
               </div>
-              <button class="btn-copy btn-copy-phone" onclick="copyPhoneNumber('+529993814530', this)" title="Copiar teléfono">
+              <button class="btn-copy btn-copy-phone" onclick="copyPhoneNumber('+529993814530', this)" title="Copiar teléfono" data-i18n="btn_copy">
                 <i class="fa-regular fa-copy"></i> Copiar
               </button>
             </div>
 
             <div class="whatsapp-action-box">
-              <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar%20con%20una%20donación" target="_blank" class="btn btn-whatsapp-main" id="btn-whatsapp-donate">
+              <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar%20con%20una%20donación" target="_blank" class="btn btn-whatsapp-main" id="btn-whatsapp-donate" data-i18n="help_wa_btn">
                 <i class="fa-brands fa-whatsapp"></i> Enviar Mensaje por WhatsApp
               </a>
-              <p class="whatsapp-hint"><i class="fa-solid fa-shield-heart"></i> Te responderemos a la brevedad con mucho cariño y agradecimiento.</p>
+              <p class="whatsapp-hint" data-i18n="help_wa_hint"><i class="fa-solid fa-shield-heart"></i> Te responderemos a la brevedad con mucho cariño y agradecimiento.</p>
             </div>
           </div>
 
@@ -261,21 +268,21 @@
             <div class="donation-header">
               <div class="donation-icon share-icon"><i class="fa-solid fa-bullhorn"></i></div>
               <div>
-                <h3>Difunde su Historia</h3>
-                <p>Compartir también es una gran forma de ayudar</p>
+                <h3 data-i18n="help_share_title">Difunde su Historia</h3>
+                <p data-i18n="help_share_subtitle">Compartir también es una gran forma de ayudar</p>
               </div>
             </div>
-            <p class="donation-text">
+            <p class="donation-text" data-i18n="help_share_text">
               Comparte esta página con amigos, familiares o en grupos de amantes de las mascotas para llegar a más personas:
             </p>
             <div class="social-share-buttons">
-              <button class="btn-social whatsapp" onclick="shareOnWhatsApp()">
+              <button class="btn-social whatsapp" onclick="shareOnWhatsApp()" data-i18n="share_btn_wa">
                 <i class="fa-brands fa-whatsapp"></i> Compartir en WhatsApp
               </button>
-              <button class="btn-social facebook" onclick="shareOnFacebook()">
+              <button class="btn-social facebook" onclick="shareOnFacebook()" data-i18n="share_btn_fb">
                 <i class="fa-brands fa-facebook"></i> Compartir en Facebook
               </button>
-              <button class="btn-social copy-link" onclick="copyPageLink(this)">
+              <button class="btn-social copy-link" onclick="copyPageLink(this)" data-i18n="share_btn_link">
                 <i class="fa-solid fa-link"></i> Copiar Enlace de la Web
               </button>
             </div>
@@ -289,9 +296,9 @@
     <section id="galeria" class="section-padding bg-light-section">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Momentos Felices</span>
-          <h2 class="section-title">Galería de Nieve</h2>
-          <p class="section-desc">Aquí iremos subiendo sus fotos y avances durante su recuperación.</p>
+          <span class="section-subtitle" data-i18n="gallery_subtitle">Momentos Felices</span>
+          <h2 class="section-title" data-i18n="gallery_title">Galería de Nieve</h2>
+          <p class="section-desc" data-i18n="gallery_desc">Aquí iremos subiendo sus fotos y avances durante su recuperación.</p>
           <div class="title-underline"></div>
         </div>
 
@@ -300,7 +307,7 @@
           <div class="gallery-item">
             <img src="Feliz.jpeg" alt="Nieve sonriendo feliz" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
-              <span>Nieve sonriendo y feliz ❤️</span>
+              <span data-i18n="gallery_cap1">Nieve sonriendo y feliz ❤️</span>
             </div>
           </div>
 
@@ -308,7 +315,7 @@
           <div class="gallery-item">
             <img src="Nieve_Coche.jpeg" alt="Nieve camino al veterinario" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
-              <span>Camino al veterinario, siempre valiente 🚗🩺</span>
+              <span data-i18n="gallery_cap2">Camino al veterinario, siempre valiente 🚗🩺</span>
             </div>
           </div>
 
@@ -316,7 +323,7 @@
           <div class="gallery-item">
             <img src="Woof.jpeg" alt="Nieve lista para jugar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
-              <span>Siempre atenta y cariñosa 🐶</span>
+              <span data-i18n="gallery_cap3">Siempre atenta y cariñosa 🐶</span>
             </div>
           </div>
 
@@ -327,12 +334,12 @@
                 <source src="Nieve_Corriendo.mp4" type="video/mp4">
                 Tu navegador no soporta reproducción de videos.
               </video>
-              <div class="video-badge">
+              <div class="video-badge" data-i18n="gallery_video_badge">
                 <i class="fa-solid fa-play"></i> Video en Acción
               </div>
             </div>
             <div class="gallery-caption">
-              <span>¡Nieve corriendo con alegría! 🏃‍♀️💨</span>
+              <span data-i18n="gallery_video_cap">¡Nieve corriendo con alegría! 🏃‍♀️💨</span>
             </div>
           </div>
         </div>
@@ -343,8 +350,8 @@
     <section class="section-padding">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Seguimiento</span>
-          <h2 class="section-title">Actualizaciones de Salud</h2>
+          <span class="section-subtitle" data-i18n="timeline_subtitle">Seguimiento</span>
+          <h2 class="section-title" data-i18n="timeline_title">Actualizaciones de Salud</h2>
           <div class="title-underline"></div>
         </div>
 
@@ -353,9 +360,9 @@
           <div class="timeline-item">
             <div class="timeline-dot dot-done"></div>
             <div class="timeline-content">
-              <div class="timeline-date"><i class="fa-solid fa-circle-check"></i> Diagnóstico Confirmado</div>
-              <h4>Estudios y Biopsias Realizados</h4>
-              <p>Concluyeron con éxito los análisis clínicos y la biopsia de Nieve. Con el diagnóstico confirmado, el siguiente paso prioritario es realizar su cirugía y asegurar sus medicamentos post-operatorios.</p>
+              <div class="timeline-date" data-i18n="timeline_item2_date"><i class="fa-solid fa-circle-check"></i> Diagnóstico Confirmado</div>
+              <h4 data-i18n="timeline_item2_title">Estudios y Biopsias Realizados</h4>
+              <p data-i18n="timeline_item2_text">Concluyeron con éxito los análisis clínicos y la biopsia de Nieve. Con el diagnóstico confirmado, el siguiente paso prioritario es realizar su cirugía y asegurar sus medicamentos post-operatorios.</p>
             </div>
           </div>
 
@@ -363,9 +370,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Actualización Inicial</div>
-              <h4>Inicio de la Campaña de Apoyo</h4>
-              <p>Abrimos este espacio para recaudar apoyo y mantener informados a todos los que nos quieren ayudar con los gastos veterinarios de Nieve. ¡Muchas gracias de corazón!</p>
+              <div class="timeline-date" data-i18n="timeline_item1_date"><i class="fa-regular fa-calendar"></i> Actualización Inicial</div>
+              <h4 data-i18n="timeline_item1_title">Inicio de la Campaña de Apoyo</h4>
+              <p data-i18n="timeline_item1_text">Abrimos este espacio para recaudar apoyo y mantener informados a todos los que nos quieren ayudar con los gastos veterinarios de Nieve. ¡Muchas gracias de corazón!</p>
             </div>
           </div>
         </div>
@@ -377,9 +384,9 @@
       <div class="container text-center">
         <div class="contact-box">
           <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-          <h2>¿Tienes dudas o deseas contactarnos directamente?</h2>
-          <p>Puedes escribirnos para cualquier pregunta sobre el estado de Nieve, comprobantes médicos o enviarnos tus palabras de ánimo.</p>
-          <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar" target="_blank" class="btn btn-whatsapp-direct">
+          <h2 data-i18n="contact_title">¿Tienes dudas o deseas contactarnos directamente?</h2>
+          <p data-i18n="contact_desc">Puedes escribirnos para cualquier pregunta sobre el estado de Nieve, comprobantes médicos o enviarnos tus palabras de ánimo.</p>
+          <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar" target="_blank" class="btn btn-whatsapp-direct" id="btn-wa-contact" data-i18n="contact_btn">
             <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp (+52 999 381 4530)
           </a>
         </div>
@@ -390,16 +397,16 @@
   <!-- Sticky Bottom CTA for Mobile -->
   <div class="mobile-sticky-cta" id="mobileStickyCta">
     <div class="mobile-cta-content">
-      <span>🐶 Juntos por <strong>Nieve</strong></span>
-      <a href="#como-ayudar" class="btn-mini-donate">Apoyar ❤️</a>
+      <span data-i18n="sticky_brand">🐶 Juntos por <strong>Nieve</strong></span>
+      <a href="#como-ayudar" class="btn-mini-donate" data-i18n="sticky_btn">Apoyar ❤️</a>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© <span id="current-year">2026</span> - Campaña para Nieve 🐾</p>
-      <p class="footer-subtext">Hecho con mucho amor y esperanza por su pronta recuperación.</p>
+      <p><span data-i18n="footer_copy">© <span id="current-year">2026</span> - Campaña para Nieve 🐾</span></p>
+      <p class="footer-subtext" data-i18n="footer_sub">Hecho con mucho amor y esperanza por su pronta recuperación.</p>
     </div>
   </footer>
 
