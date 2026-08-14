@@ -278,6 +278,16 @@ function setLanguage(lang) {
     }
   }
 
+  // Update Floating Toggle Button Label
+  const floatingLabel = document.getElementById('floating-lang-label');
+  if (floatingLabel) {
+    if (lang === 'es') {
+      floatingLabel.innerHTML = '🇺🇸 Switch to English';
+    } else {
+      floatingLabel.innerHTML = '🇲🇽 Cambiar a Español';
+    }
+  }
+
   // Update Dynamic WhatsApp links
   const donateWaText = encodeURIComponent(translations[lang].wa_prefilled_donate);
   const contactWaText = encodeURIComponent(translations[lang].wa_prefilled_contact);
@@ -302,6 +312,12 @@ function setLanguage(lang) {
   if (currentYearSpan) {
     currentYearSpan.textContent = new Date().getFullYear();
   }
+}
+
+// Toggle language helper for floating button
+function toggleLanguage() {
+  const nextLang = currentLang === 'es' ? 'en' : 'es';
+  setLanguage(nextLang);
 }
 
 // Determine initial language
