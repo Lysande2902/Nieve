@@ -6,9 +6,19 @@ Página web estática (HTML5, CSS3, JavaScript) lista para publicar en **GitHub 
 
 ## 📁 Archivos del proyecto
 
-- [`index.html`](index.html): Estructura principal de la página.
-- [`styles.css`](styles.css): Diseño visual, colores, animaciones y adaptación móvil.
-- [`script.js`](script.js): Interactividad (copiar número de cuenta/CLABE, compartir en WhatsApp/Facebook y notificaciones).
+- [`index.html`](index.html): Estructura principal de la página con etiquetas de traducción bilingüe.
+- [`styles.css`](styles.css): Diseño visual, colores, animaciones, selector de idioma y adaptación móvil.
+- [`script.js`](script.js): Sistema bilingüe dinámico (Español / Inglés), copiar contacto, compartir en WhatsApp/Facebook y notificaciones.
+
+---
+
+## 🌐 Soporte Bilingüe (Español / English)
+
+La página incluye un selector de idioma instantáneo en la cabecera (🇲🇽 ES / 🇺🇸 EN).
+- Guarda la preferencia del visitante automáticamente.
+- Permite enlaces directos por parámetro de URL:
+  - Versión en Español: `https://lysande2902.github.io/Nieve/?lang=es`
+  - English Version: `https://lysande2902.github.io/Nieve/?lang=en`
 
 ---
 

@@ -196,6 +196,54 @@ img {
   transform: translateY(-1px);
 }
 
+/* Language Switcher */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  color: var(--muted);
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  color: var(--dark);
+}
+
+.lang-btn.active {
+  background: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.lang-btn .flag {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 /* ===================================================
    BUTTONS
 =================================================== */
@@ -1354,6 +1402,20 @@ img {
 @media (max-width: 600px) {
   .section-padding {
     padding: 50px 0;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .btn-nav-donate {
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
 
   .mobile-sticky-cta {
