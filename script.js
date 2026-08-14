@@ -282,9 +282,9 @@ function setLanguage(lang) {
   const floatingLabel = document.getElementById('floating-lang-label');
   if (floatingLabel) {
     if (lang === 'es') {
-      floatingLabel.innerHTML = '🇺🇸 Switch to English';
+      floatingLabel.textContent = 'Switch to English (EN)';
     } else {
-      floatingLabel.innerHTML = '🇲🇽 Cambiar a Español';
+      floatingLabel.textContent = 'Cambiar a Español (ES)';
     }
   }
 
