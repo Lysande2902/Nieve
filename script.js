@@ -1,4 +1,15 @@
 // ==========================================================================
+// CONFIGURACIÓN DEL TERMÓMETRO / RECAUDACIÓN (EDITA AQUÍ TUS VALORES)
+// ==========================================================================
+// Puedes modificar estos valores conforme recibas aportaciones o cambien los costos estimados:
+const fundraisingConfig = {
+  goalAmount: 15000,    // Meta total estimada en MXN (puedes ajustarla según el presupuesto)
+  raisedAmount: 0,      // Monto recaudado actual en MXN (cámbialo con las donaciones que vayas recibiendo)
+  currency: 'MXN',
+  currencySymbol: '$'
+};
+
+// ==========================================================================
 // DICCIONARIO DE TRADUCCIONES / TRANSLATIONS DICTIONARY (ES / EN)
 // ==========================================================================
 const translations = {
@@ -10,7 +21,9 @@ const translations = {
     // Header & Nav
     nav_brand: 'Juntos por <strong>Nieve</strong>',
     nav_story: "Su Historia",
-    nav_health: "Estado de Salud",
+    nav_health: "Salud y Cirugía",
+    nav_budget: "Presupuesto y Meta",
+    nav_prevention: "Prevención",
     nav_photos: "Fotos",
     nav_help_btn: "❤️ Cómo Ayudar",
 
@@ -36,24 +49,80 @@ const translations = {
     story_card3_title: "Una Gran Luchadora",
     story_card3_text: "Hoy se enfrenta a un desafío de salud, pero con el tratamiento médico adecuado y nuestro apoyo colectivo, sabemos que saldrá adelante.",
 
-    // Medical
+    // Good News Alert
+    good_news_title: "🎉 ¡Excelente Noticia: Los análisis confirman que NO TIENE METÁSTASIS!",
+    good_news_text: "Los estudios clínicos y radiografías mostraron que sus pulmones y órganos vitales están completamente limpios. Esto es una maravillosa noticia: el cáncer no se ha extendido, lo que le da a Nieve una gran oportunidad de superar esto y seguir viviendo muchos años felices a nuestro lado.",
+
+    // Medical Status & Steps
     medical_badge: '<i class="fa-solid fa-circle-exclamation"></i> Situación Médica',
     medical_title: "El diagnóstico de Nieve",
-    medical_lead: 'Recientemente se le detectó un <strong>tumor</strong>. Ya se le realizaron los <strong>estudios clínicos y biopsias</strong> para su diagnóstico, y ahora el paso más importante es su <strong>cirugía y tratamiento post-operatorio</strong>.',
-    medical_desc: "El objetivo actual de esta campaña es solventar los gastos veterinarios de su operación y recuperación:",
-    medical_step1_title: "Estudios, Biopsias y Análisis Clínicos",
-    medical_step1_badge: '<i class="fa-solid fa-check"></i> Realizado',
-    medical_step1_desc: "Diagnóstico veterinario completado para planificar la intervención médica.",
-    medical_step2_title: "Procedimiento Quirúrgico / Cirugía",
+    medical_lead: 'A Nieve se le detectaron <strong>tumores en las glándulas mamarias</strong>. Tras realizar sus estudios completos, el veterinario indicó que <strong>es necesario retirarle ambas cadenas mamarias en dos cirugías separadas</strong> (primero una cadena y, una vez cicatrizada y recuperada, la segunda).',
+    medical_desc: "La recuperación de cada cirugía será un proceso lento y delicado. Se requerirá <strong>material de curación constante</strong> (gasas estériles, apósitos, faja/cono, antisépticos), medicación para el dolor y <strong>visitas veterinarias extras</strong> de seguimiento:",
+    medical_step1_title: "1. Estudios Clínicos y Radiografías",
+    medical_step1_badge: '<i class="fa-solid fa-check"></i> ¡Sin Metástasis!',
+    medical_step1_desc: "Órganos y pulmones sanos confirmados para proceder con seguridad quirúrgica.",
+    medical_step2_title: "2. Primera Mastectomía (1ª Cadena Mamaria)",
     medical_step2_badge: '<i class="fa-solid fa-heart-pulse"></i> Próximo Paso',
-    medical_step2_desc: "Extracción del tumor, quirófano, monitoreo y anestesia especializada.",
-    medical_step3_title: "Medicamentos y Cuidados Post-operatorios",
-    medical_step3_desc: "Antibióticos, analgésicos, curaciones y consultas de seguimiento veterinario.",
+    medical_step2_desc: "Extracción de la primera cadena de glándulas mamarias, quirófano y anestesia especializada.",
+    medical_step3_title: "3. Segunda Mastectomía (2ª Cadena Mamaria)",
+    medical_step3_desc: "Segunda intervención programada una vez que Nieve se recupere y cicatrice de la primera.",
+    medical_step4_title: "4. Recuperación, Curaciones y Visitas Extras",
+    medical_step4_desc: "Proceso lento: antibióticos, analgésicos, apósitos, gasas, curaciones y consultas de seguimiento.",
     medical_card_title: "Apoyo Médico Directo",
     medical_card_badge: "Campaña Activa",
-    medical_card_desc: "Cada aportación se destina <strong>100%</strong> a los gastos de veterinaria, estudios clínicos y medicación de Nieve.",
+    medical_card_desc: "Cada aportación se destina <strong>100%</strong> a los gastos de las cirugías, estudios clínicos, curaciones y medicación de Nieve.",
     medical_card_transparency: "Estaremos compartiendo todas las recetas, notas médicas y comprobantes veterinarios con quienes nos apoyen.",
     medical_card_btn: '<i class="fa-brands fa-whatsapp"></i> Contactar para Apoyar',
+
+    // Budget & Breakdown
+    budget_subtitle: "Transparencia y Próximos Pasos",
+    budget_title: "Presupuesto Estimado y Meta de Apoyo",
+    budget_desc: "Para que quienes puedan donar conozcan en detalle a qué se enfrenta Nieve en sus próximas etapas médicas:",
+    budget_item1_title: "1ª Cirugía: Mastectomía Cadena Mamaria",
+    budget_item1_tag: "Etapa 1 · Prioritaria",
+    budget_item1_desc: "Extracción quirúrgica de la primera cadena de glándulas mamarias con tumores, quirófano, honorarios veterinarios, anestesia inhalatoria y monitoreo transoperatorio.",
+    budget_item1_sub1: '<i class="fa-solid fa-check"></i> Quirófano y Anestesia',
+    budget_item1_sub2: '<i class="fa-solid fa-check"></i> Extracción de 1ª Cadena',
+    budget_item1_sub3: '<i class="fa-solid fa-check"></i> Monitoreo Veterinario',
+    budget_item2_title: "2ª Cirugía: Mastectomía Segunda Cadena",
+    budget_item2_tag: "Etapa 2 · Programada",
+    budget_item2_desc: "Una vez que la herida de la primera intervención cicatrice adecuadamente, se retirará la segunda cadena mamaria para erradicar totalmente el riesgo tumoral.",
+    budget_item2_sub1: '<i class="fa-solid fa-check"></i> Segunda Mastectomía',
+    budget_item2_sub2: '<i class="fa-solid fa-check"></i> Quirófano Especializado',
+    budget_item2_sub3: '<i class="fa-solid fa-check"></i> Anestesia y Recuperación',
+    budget_item3_title: "Medicamentos Post-operatorios (Ambas Fases)",
+    budget_item3_tag: "Tratamiento Continuo",
+    budget_item3_desc: "Antibióticos para prevenir infecciones, analgésicos de grado veterinario para el control del dolor y desinflamatorios para una recuperación segura.",
+    budget_item3_sub1: '<i class="fa-solid fa-check"></i> Antibióticos',
+    budget_item3_sub2: '<i class="fa-solid fa-check"></i> Analgésicos y Control del Dolor',
+    budget_item3_sub3: '<i class="fa-solid fa-check"></i> Protectores Gástricos',
+    budget_item4_title: "Material de Curación y Visitas Veterinarias Extras",
+    budget_item4_tag: "Recuperación Lenta",
+    budget_item4_desc: "La recuperación será prolongada y requiere insumos diarios (gasas estériles, apósitos, fajas protectoras, collar isabelino, antisépticos) y consultas extras de revisión y retiro de puntos.",
+    budget_item4_sub1: '<i class="fa-solid fa-check"></i> Gasas, Apósitos y Soluciones',
+    budget_item4_sub2: '<i class="fa-solid fa-check"></i> Faja / Cono Protector',
+    budget_item4_sub3: '<i class="fa-solid fa-check"></i> Consultas Extras y Retiro de Puntos',
+    budget_btn_donate: '<i class="fa-brands fa-whatsapp"></i> Apoyar con una Donación',
+
+    // Progress Thermometer Card
+    progress_card_title: "📊 Avance de Recaudación",
+    progress_card_subtitle: "Termómetro actualizado de donaciones para el tratamiento de Nieve.",
+    progress_raised_label: "Recaudado",
+    progress_goal_label: "Meta Estimada",
+    progress_percent_label: "Progreso alcanzado:",
+    progress_note: "Actualizamos este contador periódicamente conforme recibimos las aportaciones. ¡Cada granito de arena cuenta enormemente!",
+
+    // Prevention & Awareness (Spaying)
+    prev_badge: '<i class="fa-solid fa-shield-dog"></i> Consejo de Amor y Prevención',
+    prev_title: "💡 Esterilizar a tus mascotas salva vidas",
+    prev_subtitle: "Queremos que la historia de Nieve sirva también para ayudar y concientizar a más familias con perritas y gatitas:",
+    prev_card1_title: "Previene Tumores Mamarios",
+    prev_card1_text: "Esterilizar a perritas y gatitas a temprana edad reduce hasta en un <strong>90% a 95%</strong> la probabilidad de que desarrollen tumores en las glándulas mamarias.",
+    prev_card2_title: "Elimina Infecciones Mortales",
+    prev_card2_text: "Evita completamente la <strong>piometra</strong> (infección uterina grave y de urgencia) y reduce problemas hormonales o quistes ováricos comunes en la adultez.",
+    prev_card3_title: "Mayor Esperanza de Vida",
+    prev_card3_text: "Las mascotas esterilizadas viven vidas más largas, saludables y libres del estrés del celo. Consulta a tu veterinario de confianza para hacerlo a tiempo.",
+    prev_quote: '"La esterilización temprana es el mejor regalo de salud preventiva que podemos darle a nuestros compañeros peludos."',
 
     // Help & Donation
     help_subtitle: "Tu apoyo hace la diferencia",
@@ -86,9 +155,12 @@ const translations = {
     // Timeline
     timeline_subtitle: "Seguimiento",
     timeline_title: "Actualizaciones de Salud",
-    timeline_item2_date: '<i class="fa-solid fa-circle-check"></i> Diagnóstico Confirmado',
-    timeline_item2_title: "Estudios y Biopsias Realizados",
-    timeline_item2_text: "Concluyeron con éxito los análisis clínicos y la biopsia de Nieve. Con el diagnóstico confirmado, el siguiente paso prioritario es realizar su cirugía y asegurar sus medicamentos post-operatorios.",
+    timeline_item3_date: '<i class="fa-solid fa-circle-check"></i> Estudios Clínicos Completados',
+    timeline_item3_title: "¡Sin Metástasis y Órganos Sanos!",
+    timeline_item3_text: "Los análisis y radiografías confirmaron que no hay metástasis en pulmones ni órganos. Con este excelente resultado, el siguiente paso prioritario es su primera mastectomía para retirar los tumores de su cadena mamaria.",
+    timeline_item2_date: '<i class="fa-solid fa-hospital"></i> Diagnóstico Veterinario',
+    timeline_item2_title: "Plan Quirúrgico: Mastectomía en Dos Fases",
+    timeline_item2_text: "Debido a la ubicación de los tumores en las glándulas mamarias, el equipo veterinario determinó operar en dos cirugías independientes para no comprometer su piel y permitir una cicatrización segura.",
     timeline_item1_date: '<i class="fa-regular fa-calendar"></i> Actualización Inicial',
     timeline_item1_title: "Inicio de la Campaña de Apoyo",
     timeline_item1_text: "Abrimos este espacio para recaudar apoyo y mantener informados a todos los que nos quieren ayudar con los gastos veterinarios de Nieve. ¡Muchas gracias de corazón!",
@@ -124,7 +196,9 @@ const translations = {
     // Header & Nav
     nav_brand: 'Together for <strong>Nieve</strong>',
     nav_story: "Her Story",
-    nav_health: "Medical Status",
+    nav_health: "Health & Surgery",
+    nav_budget: "Budget & Goal",
+    nav_prevention: "Prevention",
     nav_photos: "Photos",
     nav_help_btn: "❤️ How to Help",
 
@@ -150,24 +224,80 @@ const translations = {
     story_card3_title: "A Brave Fighter",
     story_card3_text: "Today she faces a health challenge, but with proper medical treatment and our collective support, we know she will pull through.",
 
-    // Medical
+    // Good News Alert
+    good_news_title: "🎉 Great News: Medical Tests Confirm NO METASTASIS!",
+    good_news_text: "Clinical examinations and X-rays showed that her lungs and vital organs are completely clear. This is wonderful news: the cancer has not spread, giving Nieve a fantastic chance to overcome this and live happily for many more years!",
+
+    // Medical Status & Steps
     medical_badge: '<i class="fa-solid fa-circle-exclamation"></i> Medical Condition',
     medical_title: "Nieve's Diagnosis",
-    medical_lead: 'She was recently diagnosed with a <strong>tumor</strong>. <strong>Clinical tests and biopsies</strong> have already been completed for diagnosis, and the most critical next step is her <strong>surgery and post-operative care</strong>.',
-    medical_desc: "The current goal of this campaign is to cover the veterinary costs of her surgery and recovery:",
-    medical_step1_title: "Tests, Biopsies & Clinical Analysis",
-    medical_step1_badge: '<i class="fa-solid fa-check"></i> Completed',
-    medical_step1_desc: "Veterinary diagnosis completed to plan the surgical procedure.",
-    medical_step2_title: "Surgical Procedure / Surgery",
+    medical_lead: 'Nieve was diagnosed with <strong>tumors in her mammary glands</strong>. After comprehensive testing, her veterinary team determined that <strong>both mammary chains must be surgically removed in two separate operations</strong> (first one chain, and after healing, the second).',
+    medical_desc: "Recovery from each surgery will be slow and delicate. It will require <strong>ongoing wound care supplies</strong> (sterile gauze, dressings, recovery cone/suit, antiseptics), pain management, and <strong>extra follow-up veterinary visits</strong>:",
+    medical_step1_title: "1. Clinical Tests & X-Rays",
+    medical_step1_badge: '<i class="fa-solid fa-check"></i> No Metastasis!',
+    medical_step1_desc: "Healthy lungs and organs confirmed to proceed safely with surgery.",
+    medical_step2_title: "2. First Mastectomy (1st Mammary Chain)",
     medical_step2_badge: '<i class="fa-solid fa-heart-pulse"></i> Next Step',
-    medical_step2_desc: "Tumor removal surgery, operating room, monitoring, and specialized anesthesia.",
-    medical_step3_title: "Medication & Post-Op Care",
-    medical_step3_desc: "Antibiotics, pain relief, wound care, and veterinary follow-up visits.",
+    medical_step2_desc: "Surgical removal of the first mammary gland chain, operating room, and specialized anesthesia.",
+    medical_step3_title: "3. Second Mastectomy (2nd Mammary Chain)",
+    medical_step3_desc: "Second scheduled surgery once Nieve heals and recovers from the first.",
+    medical_step4_title: "4. Recovery, Wound Care & Extra Visits",
+    medical_step4_desc: "Extended recovery: antibiotics, pain relief, sterile dressings, and follow-up consultations.",
     medical_card_title: "Direct Medical Support",
     medical_card_badge: "Active Campaign",
-    medical_card_desc: "Every contribution goes <strong>100%</strong> toward veterinary care, clinical studies, and Nieve's medications.",
+    medical_card_desc: "Every contribution goes <strong>100%</strong> toward surgeries, clinical studies, wound care, and Nieve's medications.",
     medical_card_transparency: "We will be sharing all medical prescriptions, veterinary invoices, and receipts with everyone who supports us.",
     medical_card_btn: '<i class="fa-brands fa-whatsapp"></i> Contact to Support',
+
+    // Budget & Breakdown
+    budget_subtitle: "Transparency & Next Medical Steps",
+    budget_title: "Estimated Budget & Campaign Goal",
+    budget_desc: "So that potential donors have complete clarity on what Nieve faces in her upcoming medical phases:",
+    budget_item1_title: "1st Surgery: Mammary Chain Mastectomy",
+    budget_item1_tag: "Phase 1 · Priority",
+    budget_item1_desc: "Surgical removal of the first mammary chain with tumors, operating room, veterinary surgeon fees, inhaled anesthesia, and intraoperative monitoring.",
+    budget_item1_sub1: '<i class="fa-solid fa-check"></i> OR & Anesthesia',
+    budget_item1_sub2: '<i class="fa-solid fa-check"></i> 1st Chain Removal',
+    budget_item1_sub3: '<i class="fa-solid fa-check"></i> Vet Monitoring',
+    budget_item2_title: "2nd Surgery: Second Mammary Chain Mastectomy",
+    budget_item2_tag: "Phase 2 · Scheduled",
+    budget_item2_desc: "Once the surgical wound from the first surgery has healed properly, the second mammary chain will be removed to fully eradicate tumor risk.",
+    budget_item2_sub1: '<i class="fa-solid fa-check"></i> Second Mastectomy',
+    budget_item2_sub2: '<i class="fa-solid fa-check"></i> Specialized Operating Room',
+    budget_item2_sub3: '<i class="fa-solid fa-check"></i> Anesthesia & Recovery',
+    budget_item3_title: "Post-Op Medications (Both Phases)",
+    budget_item3_tag: "Ongoing Treatment",
+    budget_item3_desc: "Antibiotics to prevent infections, veterinary-grade pain management, and anti-inflammatory medications for safe recovery.",
+    budget_item3_sub1: '<i class="fa-solid fa-check"></i> Antibiotics',
+    budget_item3_sub2: '<i class="fa-solid fa-check"></i> Pain Control & Analgesics',
+    budget_item3_sub3: '<i class="fa-solid fa-check"></i> Gastric Protectors',
+    budget_item4_title: "Wound Care Supplies & Extra Vet Visits",
+    budget_item4_tag: "Slow Recovery",
+    budget_item4_desc: "Recovery will be prolonged and requires daily supplies (sterile gauze, dressings, protective suit/cone, antiseptics) and extra check-ups for suture removal.",
+    budget_item4_sub1: '<i class="fa-solid fa-check"></i> Gauze, Dressings & Antiseptics',
+    budget_item4_sub2: '<i class="fa-solid fa-check"></i> Protective Suit / Cone',
+    budget_item4_sub3: '<i class="fa-solid fa-check"></i> Extra Visits & Suture Removal',
+    budget_btn_donate: '<i class="fa-brands fa-whatsapp"></i> Support with a Donation',
+
+    // Progress Thermometer Card
+    progress_card_title: "📊 Fundraising Progress",
+    progress_card_subtitle: "Updated donation thermometer for Nieve's treatment.",
+    progress_raised_label: "Raised",
+    progress_goal_label: "Estimated Goal",
+    progress_percent_label: "Progress achieved:",
+    progress_note: "We update this counter periodically as donations are received. Every single contribution makes a world of difference!",
+
+    // Prevention & Awareness (Spaying)
+    prev_badge: '<i class="fa-solid fa-shield-dog"></i> Prevention & Love Tip',
+    prev_title: "💡 Spaying Your Pets Saves Lives",
+    prev_subtitle: "We hope Nieve's journey also helps spread vital awareness to other pet families:",
+    prev_card1_title: "Prevents Mammary Tumors",
+    prev_card1_text: "Spaying female dogs and cats at an early age reduces the risk of developing mammary gland tumors by up to <strong>90% to 95%</strong>.",
+    prev_card2_title: "Eliminates Deadly Infections",
+    prev_card2_text: "Completely eliminates the risk of <strong>pyometra</strong> (severe and life-threatening uterine infection) and prevents hormonal disorders.",
+    prev_card3_title: "Longer & Healthier Life",
+    prev_card3_text: "Spayed pets live longer, healthier lives free from the physical and hormonal stress of heat cycles. Consult your trusted veterinarian.",
+    prev_quote: '"Early spaying is the greatest gift of preventive healthcare we can give our furry companions."',
 
     // Help & Donation
     help_subtitle: "Your support makes a difference",
@@ -200,9 +330,12 @@ const translations = {
     // Timeline
     timeline_subtitle: "Updates & Follow-up",
     timeline_title: "Health Updates",
-    timeline_item2_date: '<i class="fa-solid fa-circle-check"></i> Confirmed Diagnosis',
-    timeline_item2_title: "Clinical Tests & Biopsies Completed",
-    timeline_item2_text: "Nieve's clinical tests and biopsy were successfully completed. With the confirmed diagnosis, the top priority next step is her surgery and securing her post-op medications.",
+    timeline_item3_date: '<i class="fa-solid fa-circle-check"></i> Clinical Tests Completed',
+    timeline_item3_title: "No Metastasis & Healthy Organs!",
+    timeline_item3_text: "Clinical examinations and X-rays confirmed there is no metastasis in lungs or vital organs. With this excellent milestone, the next top priority is her first mammary chain mastectomy.",
+    timeline_item2_date: '<i class="fa-solid fa-hospital"></i> Veterinary Diagnosis',
+    timeline_item2_title: "Surgical Plan: Two-Phase Mastectomy",
+    timeline_item2_text: "Due to the location of tumors in her mammary glands, veterinarians determined to perform two separate surgeries to protect skin elasticity and promote safe healing.",
     timeline_item1_date: '<i class="fa-regular fa-calendar"></i> Initial Update',
     timeline_item1_title: "Launch of the Support Campaign",
     timeline_item1_text: "We created this space to raise support and keep everyone updated who wishes to help with Nieve's veterinary care. Thank you from the bottom of our hearts!",
@@ -233,6 +366,35 @@ const translations = {
 
 // Current active language
 let currentLang = 'es';
+
+// ==========================================================================
+// RENDER FUNDRAISING PROGRESS & THERMOMETER
+// ==========================================================================
+function formatCurrency(amount) {
+  return `${fundraisingConfig.currencySymbol}${Number(amount).toLocaleString('es-MX')} ${fundraisingConfig.currency}`;
+}
+
+function renderFundraisingProgress() {
+  const goalEl = document.getElementById('fund-goal-display');
+  const raisedEl = document.getElementById('fund-raised-display');
+  const barEl = document.getElementById('fund-progress-bar');
+  const badgeEl = document.getElementById('fund-percent-badge');
+
+  const goal = fundraisingConfig.goalAmount || 15000;
+  const raised = fundraisingConfig.raisedAmount || 0;
+  const percent = Math.min(100, Math.round((raised / goal) * 100));
+
+  if (goalEl) goalEl.textContent = formatCurrency(goal);
+  if (raisedEl) raisedEl.textContent = formatCurrency(raised);
+  if (badgeEl) badgeEl.textContent = `${percent}%`;
+  
+  if (barEl) {
+    // Delay slightly for CSS transition animation
+    setTimeout(() => {
+      barEl.style.width = `${percent}%`;
+    }, 150);
+  }
+}
 
 // ==========================================================================
 // LANGUAGE SWITCHER LOGIC
@@ -297,6 +459,9 @@ function setLanguage(lang) {
     btnWaContact.href = `https://wa.me/529993814530?text=${contactWaText}`;
   }
 
+  // Update thermometer display
+  renderFundraisingProgress();
+
   // Ensure current year is still set
   const currentYearSpan = document.getElementById('current-year');
   if (currentYearSpan) {
@@ -335,6 +500,9 @@ function initLanguage() {
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize language
   initLanguage();
+
+  // Render fundraising progress
+  renderFundraisingProgress();
 
   // Dynamic Year
   const currentYearSpan = document.getElementById('current-year');

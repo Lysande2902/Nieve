@@ -24,11 +24,25 @@ La página ya tiene conectadas las fotos y el video de Nieve:
 
 ---
 
-## ✏️ Configuración de Donaciones y Contacto
+## ✏️ Configuración de Donaciones, Presupuesto y Contacto
 
-La página está configurada para recibir apoyo directamente a través de **WhatsApp**:
+La página está configurada para recibir apoyo directamente a través de **WhatsApp** y mostrar el progreso de recaudación:
 - **Número configurado**: `+52 999 381 4530`
 - **Enlace directo**: `https://wa.me/529993814530`
+- **Termómetro / Barra de Progreso**: En [`script.js`](script.js), al inicio del archivo, puedes modificar la meta y el monto recaudado:
+  ```javascript
+  const fundraisingConfig = {
+    goalAmount: 15000,    // Meta total estimada en MXN
+    raisedAmount: 0,      // Monto recaudado actual en MXN (actualízalo con los donativos recibidos)
+    currency: 'MXN',
+    currencySymbol: '$'
+  };
+  ```
+- **Secciones incluidas**:
+  - **¡Sin Metástasis!**: Noticia destacada sobre los resultados favorables de los estudios.
+  - **Diagnóstico y Plan Quirúrgico**: Mastectomía en dos tiempos (1ª y 2ª cadena mamaria), cuidados y visitas extras.
+  - **Presupuesto Estimado**: Desglose transparente de costos quirúrgicos, medicación y curaciones.
+  - **Consejo de Esterilización**: Espacio de concientización sobre la importancia de esterilizar a tiempo a perritas y gatitas.
 - **Botón interactivo de copiado rápido** del número para los donantes.
 - **Botones de difusión** para compartir por WhatsApp, Facebook y enlace directo.
 

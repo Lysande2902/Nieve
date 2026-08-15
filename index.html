@@ -36,7 +36,9 @@
       </a>
       <nav class="nav-links">
         <a href="#historia" data-i18n="nav_story">Su Historia</a>
-        <a href="#salud" data-i18n="nav_health">Estado de Salud</a>
+        <a href="#salud" data-i18n="nav_health">Salud y Cirugía</a>
+        <a href="#presupuesto" data-i18n="nav_budget">Presupuesto y Meta</a>
+        <a href="#prevencion" data-i18n="nav_prevention">Prevención</a>
         <a href="#galeria" data-i18n="nav_photos">Fotos</a>
       </nav>
       <div class="header-actions">
@@ -145,6 +147,15 @@
     <!-- Medical Status & Diagnosis -->
     <section id="salud" class="section-padding bg-light-section">
       <div class="container">
+        <!-- Good News Banner: Sin Metástasis -->
+        <div class="good-news-alert">
+          <div class="good-news-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="good-news-body">
+            <h4 data-i18n="good_news_title">🎉 ¡Excelente Noticia: Los análisis confirman que NO TIENE METÁSTASIS!</h4>
+            <p data-i18n="good_news_text">Los estudios clínicos y radiografías mostraron que sus pulmones y órganos vitales están completamente limpios. Esto es una maravillosa noticia: el cáncer no se ha extendido, lo que le da a Nieve una gran oportunidad de superar esto y seguir viviendo muchos años felices a nuestro lado.</p>
+          </div>
+        </div>
+
         <div class="medical-grid">
           <div class="medical-text">
             <div class="badge-warning" data-i18n="medical_badge">
@@ -152,10 +163,10 @@
             </div>
             <h2 data-i18n="medical_title">El diagnóstico de Nieve</h2>
             <p class="lead-text" data-i18n="medical_lead">
-              Recientemente se le detectó un <strong>tumor</strong>. Ya se le realizaron los <strong>estudios clínicos y biopsias</strong> para su diagnóstico, y ahora el paso más importante es su <strong>cirugía y tratamiento post-operatorio</strong>.
+              A Nieve se le detectaron <strong>tumores en las glándulas mamarias</strong>. Tras realizar sus estudios completos, el veterinario indicó que <strong>es necesario retirarle ambas cadenas mamarias en dos cirugías separadas</strong> (primero una cadena y, una vez cicatrizada y recuperada, la segunda).
             </p>
             <p data-i18n="medical_desc">
-              El objetivo actual de esta campaña es solventar los gastos veterinarios de su operación y recuperación:
+              La recuperación de cada cirugía será un proceso lento y delicado. Se requerirá <strong>material de curación constante</strong> (gasas estériles, apósitos, faja/cono, antisépticos), medicación para el dolor y <strong>visitas veterinarias extras</strong> de seguimiento:
             </p>
             
             <ul class="medical-checklist">
@@ -163,29 +174,38 @@
                 <div class="check-icon icon-completed"><i class="fa-solid fa-circle-check"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong data-i18n="medical_step1_title">Estudios, Biopsias y Análisis Clínicos</strong>
-                    <span class="badge-done" data-i18n="medical_step1_badge"><i class="fa-solid fa-check"></i> Realizado</span>
+                    <strong data-i18n="medical_step1_title">1. Estudios Clínicos y Radiografías</strong>
+                    <span class="badge-done" data-i18n="medical_step1_badge"><i class="fa-solid fa-check"></i> ¡Sin Metástasis!</span>
                   </div>
-                  <span data-i18n="medical_step1_desc">Diagnóstico veterinario completado para planificar la intervención médica.</span>
+                  <span data-i18n="medical_step1_desc">Órganos y pulmones sanos confirmados para proceder con seguridad quirúrgica.</span>
                 </div>
               </li>
               <li class="item-urgent">
                 <div class="check-icon icon-urgent"><i class="fa-solid fa-hospital"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong data-i18n="medical_step2_title">Procedimiento Quirúrgico / Cirugía</strong>
+                    <strong data-i18n="medical_step2_title">2. Primera Mastectomía (1ª Cadena Mamaria)</strong>
                     <span class="badge-active" data-i18n="medical_step2_badge"><i class="fa-solid fa-heart-pulse"></i> Próximo Paso</span>
                   </div>
-                  <span data-i18n="medical_step2_desc">Extracción del tumor, quirófano, monitoreo y anestesia especializada.</span>
+                  <span data-i18n="medical_step2_desc">Extracción de la primera cadena de glándulas mamarias, quirófano y anestesia especializada.</span>
                 </div>
               </li>
               <li>
-                <div class="check-icon"><i class="fa-solid fa-pills"></i></div>
+                <div class="check-icon"><i class="fa-solid fa-hospital-user"></i></div>
                 <div>
                   <div class="step-header">
-                    <strong data-i18n="medical_step3_title">Medicamentos y Cuidados Post-operatorios</strong>
+                    <strong data-i18n="medical_step3_title">3. Segunda Mastectomía (2ª Cadena Mamaria)</strong>
                   </div>
-                  <span data-i18n="medical_step3_desc">Antibióticos, analgésicos, curaciones y consultas de seguimiento veterinario.</span>
+                  <span data-i18n="medical_step3_desc">Segunda intervención programada una vez que Nieve se recupere y cicatrice de la primera.</span>
+                </div>
+              </li>
+              <li>
+                <div class="check-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                <div>
+                  <div class="step-header">
+                    <strong data-i18n="medical_step4_title">4. Recuperación, Curaciones y Visitas Extras</strong>
+                  </div>
+                  <span data-i18n="medical_step4_desc">Proceso lento: antibióticos, analgésicos, apósitos, gasas, curaciones y consultas de seguimiento.</span>
                 </div>
               </li>
             </ul>
@@ -201,7 +221,7 @@
 
               <div class="medical-action-info">
                 <p data-i18n="medical_card_desc">
-                  Cada aportación se destina <strong>100%</strong> a los gastos de veterinaria, estudios clínicos y medicación de Nieve.
+                  Cada aportación se destina <strong>100%</strong> a los gastos de las cirugías, estudios clínicos, curaciones y medicación de Nieve.
                 </p>
               </div>
 
@@ -214,6 +234,172 @@
                 <i class="fa-brands fa-whatsapp"></i> Contactar para Apoyar
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Budget & Fundraising Goal Section -->
+    <section id="presupuesto" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="budget_subtitle">Transparencia y Próximos Pasos</span>
+          <h2 class="section-title" data-i18n="budget_title">Presupuesto Estimado y Meta de Apoyo</h2>
+          <p class="section-desc" data-i18n="budget_desc">Para que quienes puedan donar conozcan en detalle a qué se enfrenta Nieve en sus próximas etapas médicas:</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="budget-grid">
+          <!-- Left: Detailed Budget Items -->
+          <div class="budget-cards-list">
+            <!-- Item 1 -->
+            <div class="budget-item-card">
+              <div class="budget-item-icon"><i class="fa-solid fa-syringe"></i></div>
+              <div class="budget-item-content">
+                <div class="budget-item-top">
+                  <h4 class="budget-item-title" data-i18n="budget_item1_title">1ª Cirugía: Mastectomía Cadena Mamaria</h4>
+                  <span class="budget-item-tag tag-phase-1" data-i18n="budget_item1_tag">Etapa 1 · Prioritaria</span>
+                </div>
+                <p class="budget-item-desc" data-i18n="budget_item1_desc">Extracción quirúrgica de la primera cadena de glándulas mamarias con tumores, quirófano, honorarios veterinarios, anestesia inhalatoria y monitoreo transoperatorio.</p>
+                <ul class="budget-item-details-list">
+                  <li data-i18n="budget_item1_sub1"><i class="fa-solid fa-check"></i> Quirófano y Anestesia</li>
+                  <li data-i18n="budget_item1_sub2"><i class="fa-solid fa-check"></i> Extracción de 1ª Cadena</li>
+                  <li data-i18n="budget_item1_sub3"><i class="fa-solid fa-check"></i> Monitoreo Veterinario</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="budget-item-card">
+              <div class="budget-item-icon"><i class="fa-solid fa-hospital"></i></div>
+              <div class="budget-item-content">
+                <div class="budget-item-top">
+                  <h4 class="budget-item-title" data-i18n="budget_item2_title">2ª Cirugía: Mastectomía Segunda Cadena</h4>
+                  <span class="budget-item-tag tag-phase-2" data-i18n="budget_item2_tag">Etapa 2 · Programada</span>
+                </div>
+                <p class="budget-item-desc" data-i18n="budget_item2_desc">Una vez que la herida de la primera intervención cicatrice adecuadamente, se retirará la segunda cadena mamaria para erradicar totalmente el riesgo tumoral.</p>
+                <ul class="budget-item-details-list">
+                  <li data-i18n="budget_item2_sub1"><i class="fa-solid fa-check"></i> Segunda Mastectomía</li>
+                  <li data-i18n="budget_item2_sub2"><i class="fa-solid fa-check"></i> Quirófano Especializado</li>
+                  <li data-i18n="budget_item2_sub3"><i class="fa-solid fa-check"></i> Anestesia y Recuperación</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="budget-item-card">
+              <div class="budget-item-icon"><i class="fa-solid fa-pills"></i></div>
+              <div class="budget-item-content">
+                <div class="budget-item-top">
+                  <h4 class="budget-item-title" data-i18n="budget_item3_title">Medicamentos Post-operatorios (Ambas Fases)</h4>
+                  <span class="budget-item-tag tag-care" data-i18n="budget_item3_tag">Tratamiento Continuo</span>
+                </div>
+                <p class="budget-item-desc" data-i18n="budget_item3_desc">Antibióticos para prevenir infecciones, analgésicos de grado veterinario para el control del dolor y desinflamatorios para una recuperación segura.</p>
+                <ul class="budget-item-details-list">
+                  <li data-i18n="budget_item3_sub1"><i class="fa-solid fa-check"></i> Antibióticos</li>
+                  <li data-i18n="budget_item3_sub2"><i class="fa-solid fa-check"></i> Analgésicos y Control del Dolor</li>
+                  <li data-i18n="budget_item3_sub3"><i class="fa-solid fa-check"></i> Protectores Gástricos</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="budget-item-card">
+              <div class="budget-item-icon"><i class="fa-solid fa-bandage"></i></div>
+              <div class="budget-item-content">
+                <div class="budget-item-top">
+                  <h4 class="budget-item-title" data-i18n="budget_item4_title">Material de Curación y Visitas Veterinarias Extras</h4>
+                  <span class="budget-item-tag tag-supplies" data-i18n="budget_item4_tag">Recuperación Lenta</span>
+                </div>
+                <p class="budget-item-desc" data-i18n="budget_item4_desc">La recuperación será prolongada y requiere insumos diarios (gasas estériles, apósitos, fajas protectoras, collar isabelino, antisépticos) y consultas extras de revisión y retiro de puntos.</p>
+                <ul class="budget-item-details-list">
+                  <li data-i18n="budget_item4_sub1"><i class="fa-solid fa-check"></i> Gasas, Apósitos y Soluciones</li>
+                  <li data-i18n="budget_item4_sub2"><i class="fa-solid fa-check"></i> Faja / Cono Protector</li>
+                  <li data-i18n="budget_item4_sub3"><i class="fa-solid fa-check"></i> Consultas Extras y Retiro de Puntos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Progress Thermometer Card -->
+          <div class="budget-summary-card">
+            <div class="budget-summary-header">
+              <h3 data-i18n="progress_card_title">📊 Avance de Recaudación</h3>
+              <p data-i18n="progress_card_subtitle">Termómetro actualizado de donaciones para el tratamiento de Nieve.</p>
+            </div>
+
+            <div class="progress-box">
+              <div class="progress-labels">
+                <div class="collected-label">
+                  <span class="label-title" data-i18n="progress_raised_label">Recaudado</span>
+                  <strong id="fund-raised-display">$0 MXN</strong>
+                </div>
+                <div class="goal-label">
+                  <span class="label-title" data-i18n="progress_goal_label">Meta Estimada</span>
+                  <strong id="fund-goal-display">$15,000 MXN</strong>
+                </div>
+              </div>
+
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="fund-progress-bar" style="width: 0%;"></div>
+              </div>
+
+              <div class="progress-footer-stats">
+                <span data-i18n="progress_percent_label">Progreso alcanzado:</span>
+                <span class="progress-percent-badge" id="fund-percent-badge">0%</span>
+              </div>
+            </div>
+
+            <div class="transparency-note">
+              <i class="fa-solid fa-shield-heart"></i>
+              <p data-i18n="progress_note">Actualizamos este contador periódicamente conforme recibimos las aportaciones. ¡Cada granito de arena cuenta enormemente!</p>
+            </div>
+
+            <a href="https://wa.me/529993814530?text=Hola,%20vi%20la%20página%20de%20Nieve%20y%20me%20gustaría%20apoyar%20con%20una%20donación" target="_blank" class="btn btn-whatsapp-main btn-block" data-i18n="budget_btn_donate">
+              <i class="fa-brands fa-whatsapp"></i> Apoyar con una Donación
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prevention & Pet Spaying Awareness Section -->
+    <section id="prevencion" class="section-padding bg-light-section">
+      <div class="container">
+        <div class="prevention-box">
+          <div class="prevention-header">
+            <div class="prevention-badge" data-i18n="prev_badge">
+              <i class="fa-solid fa-shield-dog"></i> Consejo de Amor y Prevención
+            </div>
+            <h2 data-i18n="prev_title">💡 Esterilizar a tus mascotas salva vidas</h2>
+            <p data-i18n="prev_subtitle">
+              Queremos que la historia de Nieve sirva también para ayudar y concientizar a más familias con perritas y gatitas:
+            </p>
+          </div>
+
+          <div class="prevention-cards-grid">
+            <div class="prevention-card-item">
+              <div class="prevention-card-icon"><i class="fa-solid fa-shield-virus"></i></div>
+              <h4 data-i18n="prev_card1_title">Previene Tumores Mamarios</h4>
+              <p data-i18n="prev_card1_text">Esterilizar a perritas y gatitas a temprana edad reduce hasta en un <strong>90% a 95%</strong> la probabilidad de que desarrollen tumores en las glándulas mamarias.</p>
+            </div>
+
+            <div class="prevention-card-item">
+              <div class="prevention-card-icon"><i class="fa-solid fa-heart-crack"></i></div>
+              <h4 data-i18n="prev_card2_title">Elimina Infecciones Mortales</h4>
+              <p data-i18n="prev_card2_text">Evita completamente la <strong>piometra</strong> (infección uterina grave y de urgencia) y reduce problemas hormonales o quistes ováricos comunes en la adultez.</p>
+            </div>
+
+            <div class="prevention-card-item">
+              <div class="prevention-card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+              <h4 data-i18n="prev_card3_title">Mayor Esperanza de Vida</h4>
+              <p data-i18n="prev_card3_text">Las mascotas esterilizadas viven vidas más largas, saludables y libres del estrés del celo. Consulta a tu veterinario de confianza para hacerlo a tiempo.</p>
+            </div>
+          </div>
+
+          <div class="prevention-footer-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <span data-i18n="prev_quote">"La esterilización temprana es el mejor regalo de salud preventiva que podemos darle a nuestros compañeros peludos."</span>
           </div>
         </div>
       </div>
@@ -356,13 +542,23 @@
         </div>
 
         <div class="timeline">
-          <!-- Hito 2: Biopsia y Estudios -->
+          <!-- Hito 3: Sin Metástasis -->
           <div class="timeline-item">
             <div class="timeline-dot dot-done"></div>
             <div class="timeline-content">
-              <div class="timeline-date" data-i18n="timeline_item2_date"><i class="fa-solid fa-circle-check"></i> Diagnóstico Confirmado</div>
-              <h4 data-i18n="timeline_item2_title">Estudios y Biopsias Realizados</h4>
-              <p data-i18n="timeline_item2_text">Concluyeron con éxito los análisis clínicos y la biopsia de Nieve. Con el diagnóstico confirmado, el siguiente paso prioritario es realizar su cirugía y asegurar sus medicamentos post-operatorios.</p>
+              <div class="timeline-date" data-i18n="timeline_item3_date"><i class="fa-solid fa-circle-check"></i> Estudios Clínicos Completados</div>
+              <h4 data-i18n="timeline_item3_title">¡Sin Metástasis y Órganos Sanos!</h4>
+              <p data-i18n="timeline_item3_text">Los análisis y radiografías confirmaron que no hay metástasis en pulmones ni órganos. Con este excelente resultado, el siguiente paso prioritario es su primera mastectomía para retirar los tumores de su cadena mamaria.</p>
+            </div>
+          </div>
+
+          <!-- Hito 2: Plan Quirúrgico en Dos Fases -->
+          <div class="timeline-item">
+            <div class="timeline-dot dot-done"></div>
+            <div class="timeline-content">
+              <div class="timeline-date" data-i18n="timeline_item2_date"><i class="fa-solid fa-hospital"></i> Diagnóstico Veterinario</div>
+              <h4 data-i18n="timeline_item2_title">Plan Quirúrgico: Mastectomía en Dos Fases</h4>
+              <p data-i18n="timeline_item2_text">Debido a la ubicación de los tumores en las glándulas mamarias, el equipo veterinario determinó operar en dos cirugías independientes para no comprometer su piel y permitir una cicatrización segura.</p>
             </div>
           </div>
 
