@@ -77,7 +77,7 @@ const translations = {
     // Budget & Breakdown
     budget_subtitle: "Transparencia y Próximos Pasos",
     budget_title: "Presupuesto Estimado y Meta de Apoyo",
-    budget_desc: "Para que quienes puedan donar conozcan en detalle a qué se enfrenta Nieve en sus próximas etapas médicas:",
+    budget_desc: "El costo estimado para cubrir ambas intervenciones quirúrgicas, medicamentos, insumos de curación y consultas de seguimiento supera los <strong>$10,000 MXN</strong>. A continuación detallamos cada etapa:",
     budget_item1_title: "1ª Cirugía: Mastectomía Cadena Mamaria",
     budget_item1_tag: "Etapa 1 · Prioritaria",
     budget_item1_desc: "Extracción quirúrgica de la primera cadena de glándulas mamarias con tumores, quirófano, honorarios veterinarios, anestesia inhalatoria y monitoreo transoperatorio.",
@@ -252,7 +252,7 @@ const translations = {
     // Budget & Breakdown
     budget_subtitle: "Transparency & Next Medical Steps",
     budget_title: "Estimated Budget & Campaign Goal",
-    budget_desc: "So that potential donors have complete clarity on what Nieve faces in her upcoming medical phases:",
+    budget_desc: "The total estimated cost to cover both surgeries, medications, wound care supplies, and follow-up consultations exceeds <strong>$10,000 MXN ($10K+)</strong>. Below is the breakdown of each phase:",
     budget_item1_title: "1st Surgery: Mammary Chain Mastectomy",
     budget_item1_tag: "Phase 1 · Priority",
     budget_item1_desc: "Surgical removal of the first mammary chain with tumors, operating room, veterinary surgeon fees, inhaled anesthesia, and intraoperative monitoring.",
