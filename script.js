@@ -16,7 +16,7 @@ const translations = {
   es: {
     // Meta / Doc
     doc_title: "Juntos por Nieve 🐾 | Recaudación y Apoyo",
-    doc_description: "Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 9 años llena de vida y amor.",
+    doc_description: "Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 10 años llena de vida y amor.",
 
     // Header & Nav
     nav_brand: 'Juntos por <strong>Nieve</strong>',
@@ -24,15 +24,15 @@ const translations = {
     nav_health: "Salud y Cirugía",
     nav_budget: "Presupuesto y Meta",
     nav_prevention: "Prevención",
-    nav_photos: "Fotos",
+    nav_photos: "Fotos y Evidencias",
     nav_help_btn: "❤️ Cómo Ayudar",
 
     // Hero
     hero_badge: '<i class="fa-solid fa-heart-pulse"></i> Campaña Médica de Apoyo',
     hero_title: 'Ayúdanos a salvar a <span class="gradient-text">Nieve</span>',
-    hero_subtitle: 'Una dulce perrita maltesa de <strong>9 años</strong>, sumamente juguetona, cariñosa y llena de ganas de seguir viviendo momentos felices a nuestro lado.',
+    hero_subtitle: 'Una dulce perrita maltesa de <strong>10 años</strong>, sumamente juguetona, cariñosa y llena de ganas de seguir viviendo momentos felices a nuestro lado.',
     hero_pill_breed: "Perrita Maltés",
-    hero_pill_age: "9 Años",
+    hero_pill_age: "10 Años",
     hero_pill_personality: "Juguetona y Cariñosa",
     hero_btn_donate: '<i class="fa-solid fa-hand-holding-heart"></i> Donar o Apoyar',
     hero_btn_share: '<i class="fa-solid fa-share-nodes"></i> Compartir',
@@ -43,7 +43,7 @@ const translations = {
     story_subtitle: "Conoce a nuestra pequeña",
     story_title: "El corazón de nuestra familia",
     story_card1_title: "Espíritu Juguetón",
-    story_card1_text: "A pesar de sus 9 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.",
+    story_card1_text: "A pesar de sus 10 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.",
     story_card2_title: "Amor Incondicional",
     story_card2_text: "Es una perrita sumamente noble y cariñosa. Siempre busca dar compañía, acurrucarse y regalar miradas llenas de gratitud y ternura.",
     story_card3_title: "Una Gran Luchadora",
@@ -127,10 +127,25 @@ const translations = {
     // Help & Donation
     help_subtitle: "Tu apoyo hace la diferencia",
     help_title: "¿Cómo puedes apoyar a Nieve?",
-    help_desc: "Cualquier aportación o simplemente compartir este enlace nos acerca más a su recuperación.",
-    help_wa_title: "Donación Directa por WhatsApp",
-    help_wa_subtitle: "Coordinación personalizada y transparente",
-    help_wa_text: "Escríbenos directamente para brindarte los datos correspondientes, resolver cualquier duda sobre la salud de Nieve o enviarte sus notas médicas:",
+    help_desc: "Puedes donar directamente a la cuenta bancaria o enviarnos un mensaje por WhatsApp. Cualquier ayuda es infinitamente valiosa.",
+    
+    // Bank Transfer Card
+    help_bank_badge: '<i class="fa-solid fa-building-columns"></i> Transferencia Directa',
+    help_bank_title: "Datos Bancarios para Transferir",
+    help_bank_subtitle: "Donación inmediata sin comisiones",
+    help_bank_holder_label: "Titular de la Cuenta:",
+    help_bank_holder_val: "JOSE ILDEFONSO SALAS EUAN",
+    help_bank_card_label: "Tarjeta de Débito:",
+    help_bank_card_val: "4152 3141 7343 3080",
+    help_bank_concept_label: "Concepto Sugerido:",
+    help_bank_concept_val: "Donación Nieve",
+    help_bank_btn_copy: '<i class="fa-regular fa-copy"></i> Copiar Tarjeta',
+    help_bank_hint: '<i class="fa-solid fa-shield-check"></i> Puedes realizar transferencia SPEI o depósito en ventanilla/tiendas autorizadas.',
+
+    // WhatsApp Contact
+    help_wa_title: "Contacto Directo por WhatsApp",
+    help_wa_subtitle: "Coordinación y confirmación de donaciones",
+    help_wa_text: "Escríbenos para enviarnos el comprobante de tu transferencia, resolver cualquier duda sobre la salud de Nieve o recibir actualizaciones directas:",
     help_wa_label: "WhatsApp de contacto:",
     btn_copy: '<i class="fa-regular fa-copy"></i> Copiar',
     help_wa_btn: '<i class="fa-brands fa-whatsapp"></i> Enviar Mensaje por WhatsApp',
@@ -142,15 +157,38 @@ const translations = {
     share_btn_fb: '<i class="fa-brands fa-facebook"></i> Compartir en Facebook',
     share_btn_link: '<i class="fa-solid fa-link"></i> Copiar Enlace de la Web',
 
-    // Gallery
-    gallery_subtitle: "Momentos Felices",
-    gallery_title: "Galería de Nieve",
-    gallery_desc: "Aquí iremos subiendo sus fotos y avances durante su recuperación.",
+    // Gallery & Evidence
+    gallery_subtitle: "Transparencia y Diagnóstico",
+    gallery_title: "Galería de Nieve y Evidencias Médicas",
+    gallery_desc: "Aquí puedes consultar las fotos de Nieve, sus radiografías, la valoración clínica de los tumores y los documentos médicos PDF oficiales.",
+    tab_all: "Todos los Archivos",
+    tab_photos: "Fotos de Nieve",
+    tab_rx: "Radiografías (Tórax Limpio)",
+    tab_tumors: "Diagnóstico de Tumores",
+    tab_pdfs: "Análisis y PDFs Médicos",
+
     gallery_cap1: "Nieve sonriendo y feliz ❤️",
     gallery_cap2: "Camino al veterinario, siempre valiente 🚗🩺",
     gallery_cap3: "Siempre atenta y cariñosa 🐶",
     gallery_video_badge: '<i class="fa-solid fa-play"></i> Video en Acción',
     gallery_video_cap: "¡Nieve corriendo con alegría! 🏃‍♀️💨",
+
+    gallery_rx1_cap: "Radiografía de Tórax (Sin Metástasis)",
+    gallery_rx2_cap: "Estudio Lateral Torácico de Nieve",
+    gallery_rx3_cap: "Radiografía: Masa Tumoral Marcada en Glándula",
+
+    gallery_tumor1_cap: "Valoración Clínica: Tumores Mamarios (Vista 1)",
+    gallery_tumor2_cap: "Valoración Clínica: Tumores Mamarios (Vista 2)",
+
+    pdf_card1_title: "Biometría Hemática Completa",
+    pdf_card1_desc: "Análisis sanguíneo inicial (Malix Veterinaria).",
+    pdf_card2_title: "Perfil Bioquímico Diagnóstico",
+    pdf_card2_desc: "Evaluación de función renal, hepática y órganos vitales.",
+    pdf_card3_title: "Estudio y Diagnóstico Radiológico",
+    pdf_card3_desc: "Reporte completo de rayos X confirmando órganos sin metástasis.",
+    pdf_card4_title: "Presupuesto Quirúrgico Mastectomía",
+    pdf_card4_desc: "Desglose de honorarios, quirófano y tratamiento de Nieve.",
+    pdf_btn_open: '<i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial',
 
     // Timeline
     timeline_subtitle: "Seguimiento",
@@ -179,10 +217,11 @@ const translations = {
     // Alerts & dynamic texts
     toast_copied: "¡Copiado al portapapeles!",
     toast_phone_copied: "¡Número de WhatsApp copiado!",
+    toast_card_copied: "¡Número de Tarjeta copiado!",
     toast_link_copied: "¡Enlace de la página copiado!",
     btn_copied_state: '<i class="fa-solid fa-check"></i> ¡Copiado!',
     share_title: "Juntos por Nieve 🐾",
-    share_msg: "Ayúdanos a apoyar el tratamiento de Nieve, una perrita maltesa de 9 años llena de vida.",
+    share_msg: "Ayúdanos a apoyar el tratamiento de Nieve, una perrita maltesa de 10 años llena de vida.",
     wa_share_msg: "🐾 Hola, te comparto la campaña de apoyo para Nieve, una perrita maltesa que necesita tratamiento médico: ",
     wa_prefilled_donate: "Hola, vi la página de Nieve y me gustaría apoyar con una donación",
     wa_prefilled_contact: "Hola, vi la página de Nieve y me gustaría apoyar"
@@ -191,7 +230,7 @@ const translations = {
   en: {
     // Meta / Doc
     doc_title: "Together for Nieve 🐾 | Medical Fundraiser & Support",
-    doc_description: "Fundraising campaign for the medical treatment and recovery of Nieve, a loving 9-year-old Maltese dog full of life.",
+    doc_description: "Fundraising campaign for the medical treatment and recovery of Nieve, a loving 10-year-old Maltese dog full of life.",
 
     // Header & Nav
     nav_brand: 'Together for <strong>Nieve</strong>',
@@ -199,15 +238,15 @@ const translations = {
     nav_health: "Health & Surgery",
     nav_budget: "Budget & Goal",
     nav_prevention: "Prevention",
-    nav_photos: "Photos",
+    nav_photos: "Photos & Proofs",
     nav_help_btn: "❤️ How to Help",
 
     // Hero
     hero_badge: '<i class="fa-solid fa-heart-pulse"></i> Medical Support Campaign',
     hero_title: 'Help us save <span class="gradient-text">Nieve</span>',
-    hero_subtitle: 'A sweet <strong>9-year-old</strong> Maltese dog, playful, loving, and eager to keep sharing happy moments with us.',
+    hero_subtitle: 'A sweet <strong>10-year-old</strong> Maltese dog, playful, loving, and eager to keep sharing happy moments with us.',
     hero_pill_breed: "Maltese Dog",
-    hero_pill_age: "9 Years Old",
+    hero_pill_age: "10 Years Old",
     hero_pill_personality: "Playful & Loving",
     hero_btn_donate: '<i class="fa-solid fa-hand-holding-heart"></i> Donate or Support',
     hero_btn_share: '<i class="fa-solid fa-share-nodes"></i> Share',
@@ -218,7 +257,7 @@ const translations = {
     story_subtitle: "Get to know our sweet girl",
     story_title: "The heart of our family",
     story_card1_title: "Playful Spirit",
-    story_card1_text: "Despite being 9 years old, Nieve keeps the joy and spark of a puppy. She loves to run, play with her older sister Cosy (even if not by blood), and bring joy to our home.",
+    story_card1_text: "Despite being 10 years old, Nieve keeps the joy and spark of a puppy. She loves to run, play with her older sister Cosy (even if not by blood), and bring joy to our home.",
     story_card2_title: "Unconditional Love",
     story_card2_text: "She is an extremely gentle and affectionate dog. She always seeks company, loves to cuddle, and gives glances full of gratitude and tenderness.",
     story_card3_title: "A Brave Fighter",
@@ -560,6 +599,47 @@ function copyPhoneNumber(phoneNumber, buttonElement) {
   });
 }
 
+// Copy bank card number helper
+function copyBankCard(cardNumber, buttonElement) {
+  // Remove spaces for cleaner clipboard copy or preserve format
+  const cleaned = cardNumber.replace(/\s+/g, '');
+  navigator.clipboard.writeText(cleaned).then(() => {
+    showToast(translations[currentLang].toast_card_copied || "¡Tarjeta copiada al portapapeles!");
+
+    if (buttonElement) {
+      const originalHtml = buttonElement.innerHTML;
+      buttonElement.innerHTML = translations[currentLang].btn_copied_state;
+      buttonElement.style.background = '#2ec4b6';
+
+      setTimeout(() => {
+        buttonElement.innerHTML = originalHtml;
+        buttonElement.style.background = '';
+      }, 2000);
+    }
+  }).catch(err => {
+    console.error('Error al copiar tarjeta: ', err);
+  });
+}
+
+// Gallery Filtering Logic
+function filterGallery(category, tabBtn) {
+  // Update active tab styling
+  const tabButtons = document.querySelectorAll('.gallery-tab-btn');
+  tabButtons.forEach(btn => btn.classList.remove('active'));
+  if (tabBtn) tabBtn.classList.add('active');
+
+  // Show/Hide items based on data-category
+  const items = document.querySelectorAll('.gallery-grid .gallery-item, .gallery-grid .pdf-card-item');
+  items.forEach(item => {
+    const itemCat = item.getAttribute('data-category');
+    if (category === 'all' || itemCat === category) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
 // Copy website URL
 function copyPageLink(buttonElement) {
   const url = window.location.href;
@@ -588,3 +668,4 @@ function shareOnFacebook() {
   const url = encodeURIComponent(window.location.href);
   window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
 }
+

@@ -1,34 +1,58 @@
 # 🐾 Juntos por Nieve - Campaña de Recaudación
 
-Página web estática (HTML5, CSS3, JavaScript) lista para publicar en **GitHub Pages** para apoyar a Nieve, una dulce perrita maltesa de 9 años.
+Página web estática (HTML5, CSS3, JavaScript) lista para publicar en **GitHub Pages** para apoyar a Nieve, una dulce perrita maltesa de 10 años.
 
 ---
 
 ## 📁 Archivos del proyecto
 
-- [`index.html`](index.html): Estructura principal de la página.
-- [`styles.css`](styles.css): Diseño visual, colores, animaciones y adaptación móvil.
-- [`script.js`](script.js): Interactividad (copiar número de cuenta/CLABE, compartir en WhatsApp/Facebook y notificaciones).
+- [`index.html`](index.html): Estructura principal de la página con datos bancarios y evidencias médicas.
+- [`styles.css`](styles.css): Diseño visual, colores, tarjetas bancarias, filtros de evidencia y adaptación móvil.
+- [`script.js`](script.js): Interactividad (copiar tarjeta bancaria/WhatsApp, compartir en WhatsApp/Facebook, filtros de galería y traducciones i18n).
 
 ---
 
-## 📸 Archivos multimedia incluidos
+## 💳 Datos Bancarios de la Campaña
 
-La página ya tiene conectadas las fotos y el video de Nieve:
+- **Titular**: `JOSE ILDEFONSO SALAS EUAN`
+- **Tarjeta de Débito**: `4152 3141 7343 3080`
+- **Concepto Sugerido**: `Donación Nieve`
 
-1. **`Nieve.jpeg`** → Foto principal en la portada.
-2. **`Feliz.jpeg`** → Foto sonriendo en la galería.
-3. **`Nieve_Coche.jpeg`** → Foto de camino al veterinario, siempre valiente.
-4. **`Woof.jpeg`** → Foto cariñosa y atenta.
-5. **`Nieve_Corriendo.mp4`** → Video reproductor en la galería.
+---
+
+## 📸 Archivos Multimedia y Evidencias Clínicas Incluidas
+
+La página incluye fotos, videos, radiografías, diagnóstico visual y reportes en PDF:
+
+1. **Fotos de Nieve**:
+   - `Nieve.jpeg` → Foto principal en la portada.
+   - `Feliz.jpeg` → Foto sonriendo en la galería.
+   - `Nieve_Coche.jpeg` → Foto de camino al veterinario.
+   - `Woof.jpeg` → Foto cariñosa.
+   - `Nieve_Corriendo.mp4` → Video en acción.
+
+2. **Radiografías (Tórax Limpio / Sin Metástasis)**:
+   - `Analisis 1.jpg`, `Analisis 2.jpg`, `Analisis 3.jpg`
+
+3. **Diagnóstico Tumoral (Valoración Médica Visual)**:
+   - `1.jpg`, `ec24a0a1-507f-4755-87d8-10adc6274c82.jpg`
+
+4. **Documentos PDF de Análisis Clínicos Oficiales**:
+   - `11371-CHBA (CANINO) NIEVE, MALIX VETERINARIA.pdf` (Biometría Hemática)
+   - `11371-PBDG (CANINO) NIEVE, MALIX VETERINARIA.pdf` (Perfil Bioquímico)
+   - `NIEVE MARCO MALIX.pdf` (Estudio Radiológico Malix)
+   - `Y-11371 Cx Nieve.pdf` (Presupuesto Quirúrgico Mastectomía)
 
 ---
 
 ## ✏️ Configuración de Donaciones, Presupuesto y Contacto
 
-La página está configurada para recibir apoyo directamente a través de **WhatsApp** y mostrar el progreso de recaudación:
-- **Número configurado**: `+52 999 381 4530`
-- **Enlace directo**: `https://wa.me/529993814530`
+La página está configurada para recibir apoyo directo a través de **Transferencia Bancaria** y **WhatsApp**:
+- **Tarjeta para Transferencia**: `4152 3141 7343 3080` (con botón de copia rápida)
+- **Titular**: `JOSE ILDEFONSO SALAS EUAN`
+- **WhatsApp de contacto**: `+52 999 381 4530`
+- **Enlace directo a WhatsApp**: `https://wa.me/529993814530`
+
 - **Termómetro / Barra de Progreso**: En [`script.js`](script.js), al inicio del archivo, puedes modificar la meta y el monto recaudado:
   ```javascript
   const fundraisingConfig = {

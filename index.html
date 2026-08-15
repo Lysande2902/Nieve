@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Juntos por Nieve 🐾 | Recaudación y Apoyo</title>
-  <meta name="description" id="page-desc" content="Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 9 años llena de vida y amor.">
+  <meta name="description" id="page-desc" content="Campaña de recaudación para el tratamiento y recuperación de Nieve, una perrita maltesa de 10 años llena de vida y amor.">
   
   <!-- Favicon / Emojis -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
@@ -61,7 +61,7 @@
         </div>
         <h1 class="hero-title" data-i18n="hero_title">Ayúdanos a salvar a <span class="gradient-text">Nieve</span></h1>
         <p class="hero-subtitle" data-i18n="hero_subtitle">
-          Una dulce perrita maltesa de <strong>9 años</strong>, sumamente juguetona, cariñosa y llena de ganas de seguir viviendo momentos felices a nuestro lado.
+          Una dulce perrita maltesa de <strong>10 años</strong>, sumamente juguetona, cariñosa y llena de ganas de seguir viviendo momentos felices a nuestro lado.
         </p>
 
         <!-- Quick Pet Info Badges -->
@@ -72,7 +72,7 @@
           </div>
           <div class="info-pill">
             <i class="fa-solid fa-cake-candles"></i>
-            <span data-i18n="hero_pill_age">9 Años</span>
+            <span data-i18n="hero_pill_age">10 Años</span>
           </div>
           <div class="info-pill">
             <i class="fa-solid fa-sparkles"></i>
@@ -126,7 +126,7 @@
           <div class="info-card">
             <div class="card-icon"><i class="fa-solid fa-bone"></i></div>
             <h3 data-i18n="story_card1_title">Espíritu Juguetón</h3>
-            <p data-i18n="story_card1_text">A pesar de sus 9 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.</p>
+            <p data-i18n="story_card1_text">A pesar de sus 10 añitos, Nieve conserva la alegría y chispa de una cachorrita. Le encanta correr, jugar con su hermana mayor Cosy (aunque no sean de sangre) y alegrar el hogar.</p>
           </div>
 
           <div class="info-card">
@@ -415,20 +415,61 @@
           <div class="title-underline"></div>
         </div>
 
-        <div class="donation-options-grid donation-two-col">
+        <div class="donation-options-grid donation-three-col">
           
-          <!-- Opción Principal: Donación Directa vía WhatsApp -->
-          <div class="donation-card highlight-card whatsapp-focus-card">
+          <!-- Opción 1: Tarjeta Bancaria Directa (NUEVA Y DESTACADA) -->
+          <div class="donation-card highlight-card bank-focus-card">
+            <div class="donation-header">
+              <div class="donation-icon bank-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div>
+                <h3 data-i18n="help_bank_title">Datos Bancarios para Transferir</h3>
+                <p data-i18n="help_bank_subtitle" class="badge-subtitle">Transferencia SPEI / Depósito Directo</p>
+              </div>
+            </div>
+            
+            <p class="donation-text" data-i18n="help_bank_subtitle_desc">
+              Transfiere directamente para que tu aportación llegue al 100% sin intermediarios ni comisiones:
+            </p>
+
+            <div class="bank-details-box">
+              <div class="bank-detail-row">
+                <span class="bank-detail-label" data-i18n="help_bank_holder_label">Titular de la Cuenta:</span>
+                <strong class="bank-detail-val" data-i18n="help_bank_holder_val">JOSE ILDEFONSO SALAS EUAN</strong>
+              </div>
+
+              <div class="bank-detail-row bank-card-row">
+                <div>
+                  <span class="bank-detail-label" data-i18n="help_bank_card_label">Tarjeta de Débito:</span>
+                  <strong class="bank-card-number" id="bank-card-val">4152 3141 7343 3080</strong>
+                </div>
+                <button class="btn-copy btn-copy-card" onclick="copyBankCard('4152314173433080', this)" title="Copiar Tarjeta" data-i18n="help_bank_btn_copy">
+                  <i class="fa-regular fa-copy"></i> Copiar Tarjeta
+                </button>
+              </div>
+
+              <div class="bank-detail-row">
+                <span class="bank-detail-label" data-i18n="help_bank_concept_label">Concepto Sugerido:</span>
+                <span class="bank-concept-pill" data-i18n="help_bank_concept_val">Donación Nieve</span>
+              </div>
+            </div>
+
+            <div class="bank-action-box">
+              <p class="whatsapp-hint" data-i18n="help_bank_hint"><i class="fa-solid fa-shield-check"></i> Puedes hacer transferencia bancaria (SPEI), depósito en ventanilla o tiendas de conveniencia.</p>
+            </div>
+          </div>
+
+          <!-- Opción 2: Contacto por WhatsApp -->
+          <div class="donation-card whatsapp-focus-card">
             <div class="donation-header">
               <div class="donation-icon whatsapp-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
               <div>
-                <h3 data-i18n="help_wa_title">Donación Directa por WhatsApp</h3>
+                <h3 data-i18n="help_wa_title">Contacto Directo por WhatsApp</h3>
                 <p data-i18n="help_wa_subtitle">Coordinación personalizada y transparente</p>
               </div>
             </div>
             
             <p class="donation-text" data-i18n="help_wa_text">
-              Escríbenos directamente para brindarte los datos correspondientes, resolver cualquier duda sobre la salud de Nieve o enviarte sus notas médicas:
+              Escríbenos para enviarnos el comprobante de tu transferencia, resolver dudas sobre el tratamiento o recibir notas médicas:
             </p>
 
             <div class="phone-number-box">
@@ -449,7 +490,7 @@
             </div>
           </div>
 
-          <!-- Opción 2: Compartir y Difundir -->
+          <!-- Opción 3: Compartir y Difundir -->
           <div class="donation-card share-card">
             <div class="donation-header">
               <div class="donation-icon share-icon"><i class="fa-solid fa-bullhorn"></i></div>
@@ -478,19 +519,28 @@
       </div>
     </section>
 
-    <!-- Photo Gallery -->
+    <!-- Photo & Medical Evidence Gallery -->
     <section id="galeria" class="section-padding bg-light-section">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle" data-i18n="gallery_subtitle">Momentos Felices</span>
-          <h2 class="section-title" data-i18n="gallery_title">Galería de Nieve</h2>
-          <p class="section-desc" data-i18n="gallery_desc">Aquí iremos subiendo sus fotos y avances durante su recuperación.</p>
+          <span class="section-subtitle" data-i18n="gallery_subtitle">Transparencia y Diagnóstico</span>
+          <h2 class="section-title" data-i18n="gallery_title">Galería de Nieve y Evidencias Médicas</h2>
+          <p class="section-desc" data-i18n="gallery_desc">Consulta las fotos de Nieve, sus radiografías (pulmones limpios), la valoración visual de los tumores y los 4 documentos PDF de laboratorio oficiales.</p>
           <div class="title-underline"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="gallery-tabs-container">
+          <button class="gallery-tab-btn active" onclick="filterGallery('all', this)" data-i18n="tab_all">Todos los Archivos</button>
+          <button class="gallery-tab-btn" onclick="filterGallery('photos', this)" data-i18n="tab_photos">Fotos de Nieve</button>
+          <button class="gallery-tab-btn" onclick="filterGallery('rx', this)" data-i18n="tab_rx">Radiografías (Tórax Limpio)</button>
+          <button class="gallery-tab-btn" onclick="filterGallery('tumors', this)" data-i18n="tab_tumors">Diagnóstico Tumores</button>
+          <button class="gallery-tab-btn" onclick="filterGallery('pdf', this)" data-i18n="tab_pdfs">Análisis PDF Médicos</button>
         </div>
 
         <div class="gallery-grid">
           <!-- Foto 1 -->
-          <div class="gallery-item">
+          <div class="gallery-item" data-category="photos">
             <img src="Feliz.jpeg" alt="Nieve sonriendo feliz" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
               <span data-i18n="gallery_cap1">Nieve sonriendo y feliz ❤️</span>
@@ -498,7 +548,7 @@
           </div>
 
           <!-- Foto 2 -->
-          <div class="gallery-item">
+          <div class="gallery-item" data-category="photos">
             <img src="Nieve_Coche.jpeg" alt="Nieve camino al veterinario" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
               <span data-i18n="gallery_cap2">Camino al veterinario, siempre valiente 🚗🩺</span>
@@ -506,7 +556,7 @@
           </div>
 
           <!-- Foto 3 -->
-          <div class="gallery-item">
+          <div class="gallery-item" data-category="photos">
             <img src="Woof.jpeg" alt="Nieve lista para jugar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80';">
             <div class="gallery-caption">
               <span data-i18n="gallery_cap3">Siempre atenta y cariñosa 🐶</span>
@@ -514,7 +564,7 @@
           </div>
 
           <!-- Video de Nieve -->
-          <div class="gallery-item gallery-video-item">
+          <div class="gallery-item gallery-video-item" data-category="photos">
             <div class="video-container">
               <video controls preload="metadata" playsinline poster="Feliz.jpeg">
                 <source src="Nieve_Corriendo.mp4" type="video/mp4">
@@ -528,6 +578,118 @@
               <span data-i18n="gallery_video_cap">¡Nieve corriendo con alegría! 🏃‍♀️💨</span>
             </div>
           </div>
+
+          <!-- Radiografía 1 -->
+          <div class="gallery-item evidence-item" data-category="rx">
+            <a href="Analisis 1.jpg" target="_blank" title="Ver radiografía completa">
+              <img src="Analisis 1.jpg" alt="Radiografía de Tórax de Nieve">
+            </a>
+            <div class="evidence-badge badge-clean"><i class="fa-solid fa-circle-check"></i> Sin Metástasis</div>
+            <div class="gallery-caption">
+              <span data-i18n="gallery_rx1_cap">Radiografía de Tórax (Sin Metástasis)</span>
+            </div>
+          </div>
+
+          <!-- Radiografía 2 -->
+          <div class="gallery-item evidence-item" data-category="rx">
+            <a href="Analisis 2.jpg" target="_blank" title="Ver radiografía completa">
+              <img src="Analisis 2.jpg" alt="Estudio Lateral Torácico de Nieve">
+            </a>
+            <div class="evidence-badge badge-clean"><i class="fa-solid fa-circle-check"></i> Pulmones Limpios</div>
+            <div class="gallery-caption">
+              <span data-i18n="gallery_rx2_cap">Estudio Lateral Torácico de Nieve</span>
+            </div>
+          </div>
+
+          <!-- Radiografía 3: Masa en Glándula -->
+          <div class="gallery-item evidence-item" data-category="tumors">
+            <a href="Analisis 3.jpg" target="_blank" title="Ver radiografía con masa marcada">
+              <img src="Analisis 3.jpg" alt="Radiografía: Masa Tumoral Marcada en Glándula">
+            </a>
+            <div class="evidence-badge badge-diagnosis"><i class="fa-solid fa-circle-dot"></i> Masa en Glándula</div>
+            <div class="gallery-caption">
+              <span data-i18n="gallery_rx3_cap">Radiografía: Masa Tumoral Marcada en Glándula</span>
+            </div>
+          </div>
+
+          <!-- Diagnóstico Tumor 1 -->
+          <div class="gallery-item evidence-item clinical-photo-item" data-category="tumors">
+            <a href="1.jpg" target="_blank" title="Ver imagen de diagnóstico médico">
+              <img src="1.jpg" alt="Valoración clínica tumores mamarios">
+            </a>
+            <div class="evidence-badge badge-diagnosis"><i class="fa-solid fa-notes-medical"></i> Diagnóstico Tumoral</div>
+            <div class="gallery-caption">
+              <span data-i18n="gallery_tumor1_cap">Valoración Clínica: Tumores Mamarios (Vista 1)</span>
+            </div>
+          </div>
+
+          <!-- Diagnóstico Tumor 2 -->
+          <div class="gallery-item evidence-item clinical-photo-item" data-category="tumors">
+            <a href="ec24a0a1-507f-4755-87d8-10adc6274c82.jpg" target="_blank" title="Ver imagen de diagnóstico médico">
+              <img src="ec24a0a1-507f-4755-87d8-10adc6274c82.jpg" alt="Valoración clínica tumores mamarios detalle">
+            </a>
+            <div class="evidence-badge badge-diagnosis"><i class="fa-solid fa-notes-medical"></i> Diagnóstico Tumoral</div>
+            <div class="gallery-caption">
+              <span data-i18n="gallery_tumor2_cap">Valoración Clínica: Tumores Mamarios (Vista 2)</span>
+            </div>
+          </div>
+
+          <!-- PDF 1: Biometría Hemática -->
+          <div class="pdf-card-item" data-category="pdf">
+            <div class="pdf-icon-wrapper">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="pdf-info">
+              <h4 data-i18n="pdf_card1_title">Biometría Hemática Completa</h4>
+              <p data-i18n="pdf_card1_desc">Análisis sanguíneo inicial (Malix Veterinaria).</p>
+            </div>
+            <a href="11371-CHBA (CANINO) NIEVE, MALIX VETERINARIA.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
+              <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+            </a>
+          </div>
+
+          <!-- PDF 2: Perfil Bioquímico -->
+          <div class="pdf-card-item" data-category="pdf">
+            <div class="pdf-icon-wrapper">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="pdf-info">
+              <h4 data-i18n="pdf_card2_title">Perfil Bioquímico Diagnóstico</h4>
+              <p data-i18n="pdf_card2_desc">Evaluación de función renal, hepática y órganos vitales.</p>
+            </div>
+            <a href="11371-PBDG (CANINO) NIEVE, MALIX VETERINARIA.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
+              <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+            </a>
+          </div>
+
+          <!-- PDF 3: Estudio Radiológico Malix -->
+          <div class="pdf-card-item" data-category="pdf">
+            <div class="pdf-icon-wrapper">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="pdf-info">
+              <h4 data-i18n="pdf_card3_title">Estudio y Diagnóstico Radiológico</h4>
+              <p data-i18n="pdf_card3_desc">Reporte completo de rayos X confirmando órganos sin metástasis.</p>
+            </div>
+            <a href="NIEVE MARCO MALIX.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
+              <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+            </a>
+          </div>
+
+          <!-- PDF 4: Presupuesto y Cotización Cirugía -->
+          <div class="pdf-card-item" data-category="pdf">
+            <div class="pdf-icon-wrapper">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="pdf-info">
+              <h4 data-i18n="pdf_card4_title">Presupuesto Quirúrgico Mastectomía</h4>
+              <p data-i18n="pdf_card4_desc">Desglose de honorarios, quirófano y tratamiento de Nieve.</p>
+            </div>
+            <a href="Y-11371 Cx Nieve.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
+              <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
