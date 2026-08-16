@@ -14,6 +14,7 @@ Página web estática (HTML5, CSS3, JavaScript) lista para publicar en **GitHub 
 
 ## 💳 Datos Bancarios de la Campaña
 
+- **Banco**: `BBVA`
 - **Titular**: `JOSE ILDEFONSO SALAS EUAN`
 - **Tarjeta de Débito**: `4152 3141 7343 3080`
 - **Concepto Sugerido**: `Donación Nieve`
@@ -48,6 +49,7 @@ La página incluye fotos, videos, radiografías, diagnóstico visual y reportes 
 ## ✏️ Configuración de Donaciones, Presupuesto y Contacto
 
 La página está configurada para recibir apoyo directo a través de **Transferencia Bancaria** y **WhatsApp**:
+- **Banco**: `BBVA`
 - **Tarjeta para Transferencia**: `4152 3141 7343 3080` (con botón de copia rápida)
 - **Titular**: `JOSE ILDEFONSO SALAS EUAN`
 - **WhatsApp de contacto**: `+52 999 381 4530`

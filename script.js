@@ -133,6 +133,9 @@ const translations = {
     help_bank_badge: '<i class="fa-solid fa-building-columns"></i> Transferencia Directa',
     help_bank_title: "Datos Bancarios para Transferir",
     help_bank_subtitle: "Donación inmediata sin comisiones",
+    help_bank_subtitle_desc: "Transfiere directamente para que tu aportación llegue al 100% sin intermediarios ni comisiones:",
+    help_bank_institution_label: "Banco / Institución:",
+    help_bank_institution_val: "BBVA",
     help_bank_holder_label: "Titular de la Cuenta:",
     help_bank_holder_val: "JOSE ILDEFONSO SALAS EUAN",
     help_bank_card_label: "Tarjeta de Débito:",
@@ -338,10 +341,23 @@ const translations = {
     prev_card3_text: "Spayed pets live longer, healthier lives free from the physical and hormonal stress of heat cycles. Consult your trusted veterinarian.",
     prev_quote: '"Early spaying is the greatest gift of preventive healthcare we can give our furry companions."',
 
-    // Help & Donation
-    help_subtitle: "Your support makes a difference",
-    help_title: "How can you help Nieve?",
-    help_desc: "Any contribution or simply sharing this link brings us closer to her recovery.",
+    // Bank Transfer Card
+    help_bank_badge: '<i class="fa-solid fa-building-columns"></i> Direct Transfer',
+    help_bank_title: "Bank Details for Transfer",
+    help_bank_subtitle: "Immediate donation without fees",
+    help_bank_subtitle_desc: "Transfer directly so 100% of your contribution goes to Nieve without fees or intermediaries:",
+    help_bank_institution_label: "Bank / Institution:",
+    help_bank_institution_val: "BBVA",
+    help_bank_holder_label: "Account Holder:",
+    help_bank_holder_val: "JOSE ILDEFONSO SALAS EUAN",
+    help_bank_card_label: "Debit Card:",
+    help_bank_card_val: "4152 3141 7343 3080",
+    help_bank_concept_label: "Suggested Concept:",
+    help_bank_concept_val: "Donación Nieve",
+    help_bank_btn_copy: '<i class="fa-regular fa-copy"></i> Copy Card Number',
+    help_bank_hint: '<i class="fa-solid fa-shield-check"></i> Direct bank transfer (SPEI), teller deposit, or convenience store deposit.',
+
+    // WhatsApp Contact
     help_wa_title: "Direct Donation via WhatsApp",
     help_wa_subtitle: "Direct and transparent coordination",
     help_wa_text: "Send us a message directly so we can provide payment/bank details, answer any questions about Nieve's health, or share medical receipts:",
