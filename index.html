@@ -530,7 +530,7 @@
         <div class="section-header text-center">
           <span class="section-subtitle" data-i18n="gallery_subtitle">Transparencia y Diagnóstico</span>
           <h2 class="section-title" data-i18n="gallery_title">Galería de Nieve y Evidencias Médicas</h2>
-          <p class="section-desc" data-i18n="gallery_desc">Consulta las fotos de Nieve, sus radiografías (pulmones limpios), la valoración visual de los tumores y los 4 documentos PDF de laboratorio oficiales.</p>
+          <p class="section-desc" data-i18n="gallery_desc">Consulta las fotos de Nieve, sus radiografías, el estudio de ultrasonido y los presupuestos médicos oficiales del Dr. Novelo.</p>
           <div class="title-underline"></div>
         </div>
 
@@ -540,7 +540,7 @@
           <button class="gallery-tab-btn" onclick="filterGallery('photos', this)" data-i18n="tab_photos">Fotos de Nieve</button>
           <button class="gallery-tab-btn" onclick="filterGallery('rx', this)" data-i18n="tab_rx">Radiografías (Tórax Limpio)</button>
           <button class="gallery-tab-btn" onclick="filterGallery('tumors', this)" data-i18n="tab_tumors">Diagnóstico Tumores</button>
-          <button class="gallery-tab-btn" onclick="filterGallery('pdf', this)" data-i18n="tab_pdfs">Análisis PDF Médicos</button>
+          <button class="gallery-tab-btn" onclick="filterGallery('pdf', this)" data-i18n="tab_pdfs">Análisis y Documentos Médicos</button>
         </div>
 
         <div class="gallery-grid">
@@ -667,31 +667,45 @@
             </a>
           </div>
 
-          <!-- PDF 3: Estudio Radiológico Malix -->
+          <!-- PDF 3: Estudio de Ultrasonido Abdominal -->
           <div class="pdf-card-item" data-category="pdf">
             <div class="pdf-icon-wrapper">
-              <i class="fa-solid fa-file-pdf"></i>
+              <i class="fa-solid fa-notes-medical"></i>
             </div>
             <div class="pdf-info">
-              <h4 data-i18n="pdf_card3_title">Estudio y Diagnóstico Radiológico</h4>
-              <p data-i18n="pdf_card3_desc">Reporte completo de rayos X confirmando órganos sin metástasis.</p>
+              <h4 data-i18n="pdf_card3_title">Estudio de Ultrasonido Abdominal</h4>
+              <p data-i18n="pdf_card3_desc">Ultrasonido abdominal confirmando que riñones, hígado, vesícula y bazo están sin rastro de tumores.</p>
             </div>
             <a href="NIEVE MARCO MALIX.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
               <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
             </a>
           </div>
 
-          <!-- PDF 4: Presupuesto y Cotización Cirugía -->
+          <!-- Documento 4: Presupuesto Dr. Novelo - Plan Quirúrgico -->
           <div class="pdf-card-item" data-category="pdf">
-            <div class="pdf-icon-wrapper">
-              <i class="fa-solid fa-file-pdf"></i>
+            <div class="pdf-icon-wrapper presu-icon">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
             </div>
             <div class="pdf-info">
-              <h4 data-i18n="pdf_card4_title">Presupuesto Quirúrgico Mastectomía</h4>
-              <p data-i18n="pdf_card4_desc">Desglose de honorarios, quirófano y tratamiento de Nieve.</p>
+              <h4 data-i18n="presu_card1_title">Presupuesto Dr. Novelo: Plan Quirúrgico</h4>
+              <p data-i18n="presu_card1_desc">Indicaciones de cirugías (cadena ganglionar y OVH), hospitalización y posoperatorio por Dr. Novelo (Pet Doctor).</p>
             </div>
-            <a href="Y-11371 Cx Nieve.pdf" target="_blank" class="btn btn-pdf-download" data-i18n="pdf_btn_open">
-              <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+            <a href="Presupuesto.jpeg" target="_blank" class="btn btn-pdf-download btn-presu-download" data-i18n="presu_btn_open1">
+              <i class="fa-solid fa-file-image"></i> Ver Presupuesto 1 (Plan)
+            </a>
+          </div>
+
+          <!-- Documento 5: Presupuesto Dr. Novelo - Desglose de Costos -->
+          <div class="pdf-card-item" data-category="pdf">
+            <div class="pdf-icon-wrapper presu-icon">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div class="pdf-info">
+              <h4 data-i18n="presu_card2_title">Presupuesto Dr. Novelo: Desglose de Costos</h4>
+              <p data-i18n="presu_card2_desc">Cotización oficial: Ecocardiograma ($1,500), Electrocardiograma ($750) y Cirugía ($4,000).</p>
+            </div>
+            <a href="Presupuesto_1.jpeg" target="_blank" class="btn btn-pdf-download btn-presu-download" data-i18n="presu_btn_open2">
+              <i class="fa-solid fa-file-image"></i> Ver Presupuesto 2 (Costos)
             </a>
           </div>
 

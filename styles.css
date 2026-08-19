@@ -1786,6 +1786,20 @@ img {
   box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
+.pdf-icon-wrapper.presu-icon {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.btn-presu-download {
+  background: #0284c7;
+}
+
+.btn-presu-download:hover {
+  background: #0369a1;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
 
 .gallery-video-item {
   background-color: #0f172a;
