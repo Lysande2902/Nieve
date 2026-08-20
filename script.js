@@ -4,7 +4,7 @@
 // Puedes modificar estos valores conforme recibas aportaciones o cambien los costos estimados:
 const fundraisingConfig = {
   goalAmount: 15000,    // Meta total estimada en MXN (puedes ajustarla según el presupuesto)
-  raisedAmount: 0,      // Monto recaudado actual en MXN (cámbialo con las donaciones que vayas recibiendo)
+  raisedAmount: 500,      // Monto recaudado actual en MXN (cámbialo con las donaciones que vayas recibiendo)
   currency: 'MXN',
   currencySymbol: '$'
 };
